@@ -1,0 +1,104 @@
+{
+  "fetched_at": "2026-10-08T20:05:08+08:00",
+  "results": [
+    {
+      "source": "sina_list",
+      "url": "https://vip.stock.finance.sina.com.cn/quotes_service/api/json_v2.php/Market_Center.getHQNodeData",
+      "status": 200,
+      "bytes": 37171,
+      "elapsed_ms": 159,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "sina_minute",
+      "url": "https://vip.stock.finance.sina.com.cn/quotes_service/view/vMS_tradedetail.php",
+      "status": 200,
+      "bytes": 59890,
+      "elapsed_ms": 237,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "sina_kline",
+      "url": "https://money.finance.sina.com.cn/quotes_service/api/json_v2.php/CN_MarketData.getKLineData",
+      "status": 200,
+      "bytes": 561,
+      "elapsed_ms": 246,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "sina_quote",
+      "url": "https://hq.sinajs.cn/list=sh600519,sz000001",
+      "status": 200,
+      "bytes": 577,
+      "elapsed_ms": 173,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "tencent_quote",
+      "url": "https://qt.gtimg.cn/q=sh600519,sz000001",
+      "status": 200,
+      "bytes": 1074,
+      "elapsed_ms": 201,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "tencent_kline",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get",
+      "status": 200,
+      "bytes": 2070,
+      "elapsed_ms": 239,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "tencent_minute",
+      "url": "https://ifzq.gtimg.cn/appstock/app/kline/mkline",
+      "status": 200,
+      "bytes": 39688,
+      "elapsed_ms": 360,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "eastmoney_clist",
+      "url": "https://push2.eastmoney.com/api/qt/clist/get",
+      "status": 0,
+      "bytes": 0,
+      "elapsed_ms": null,
+      "error": "RemoteProtocolError: Server disconnected without sending a response.",
+      "reachable": false
+    },
+    {
+      "source": "eastmoney_kline",
+      "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+      "status": 0,
+      "bytes": 0,
+      "elapsed_ms": null,
+      "error": "RemoteProtocolError: Server disconnected without sending a response.",
+      "reachable": false
+    },
+    {
+      "source": "eastmoney_ztpool",
+      "url": "https://push2ex.eastmoney.com/getTopicZTPool",
+      "status": 200,
+      "bytes": 2715,
+      "elapsed_ms": 204,
+      "error": "",
+      "reachable": true
+    },
+    {
+      "source": "netease_quote",
+      "url": "https://api.money.126.net/data/feed/0600519",
+      "status": 0,
+      "bytes": 0,
+      "elapsed_ms": null,
+      "error": "ConnectError: [Errno 11001] getaddrinfo failed",
+      "reachable": false
+    }
+  ]
+}

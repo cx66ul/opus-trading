@@ -1,0 +1,44 @@
+{
+  "enabled": true,
+  "running": true,
+  "activated_at": "2026-10-11T20:33:32+08:00",
+  "schedule": {
+    "premarket": [
+      9,
+      0
+    ],
+    "midday": [
+      12,
+      0
+    ],
+    "close": [
+      15,
+      5
+    ],
+    "weekly": [
+      10,
+      0
+    ]
+  },
+  "heartbeat": {
+    "at": "2026-10-11T20:34:20.613833+08:00",
+    "result": "idle",
+    "trading": false
+  },
+  "counts": {
+    "sent": 1
+  },
+  "recent": [
+    {
+      "kind": "recovery_check",
+      "state": "sent",
+      "created_at": "2026-10-11T20:33:32.393662+08:00",
+      "attempted_at": "2026-10-11T20:33:38.529186+08:00",
+      "sent_at": "2026-10-11T20:33:38.529186+08:00",
+      "attempts": 1,
+      "error": ""
+    }
+  ],
+  "error": "",
+  "renderer_errors": []
+}

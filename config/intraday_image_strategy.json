@@ -1,0 +1,19 @@
+{
+  "version": "intraday-images-20261011-v1",
+  "enabled": true,
+  "available_from": "2026-10-11T23:00:00+08:00",
+  "validation_status": "unvalidated_no_performance_claim",
+  "parameters_are": "frozen_engineering_interpretations_not_original_numeric_claims",
+  "shrink_ratio": 0.8,
+  "expand_ratio": 1.5,
+  "red_green_ratio": 1.2,
+  "trend_ma": 5,
+  "max_t_fraction": 0.3333333333333333,
+  "market_max_age_seconds": 180,
+  "limit_down_max": 10,
+  "late_exit_start": "14:30",
+  "ma_cross_enabled": false,
+  "board_chase_enabled": false,
+  "missing_market_action": "candidate_only",
+  "source_images": ["source-1.jpg", "source-2.jpg", "source-3.jpg"]
+}

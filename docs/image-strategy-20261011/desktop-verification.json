@@ -1,0 +1,34 @@
+{
+  "status": 200,
+  "info": {
+    "version": "0.2.1",
+    "root": "C:/Users/cxul/WorkBuddy/2026-10-08-19-58-20/hawk",
+    "python": "C:\\Users\\cxul\\AppData\\Local\\Programs\\Opus\\resources\\runtime\\python.exe",
+    "port": 8877,
+    "dev": false,
+    "data_dir": "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\data",
+    "log_dir": "C:\\Users\\cxul\\AppData\\Local\\Temp\\opus-image-strategy-7xuEYS\\logs"
+  },
+  "rows": 20,
+  "policy": {
+    "revision": "images-20261011-v1",
+    "policy_hash": "da2e5b9f077a5e83a8735e003d03543d90b1914465463e3c7955ffdeedc1195c",
+    "weight": 0.6,
+    "available_from": "2026-10-11",
+    "validation_status": "unvalidated_user_priority",
+    "evaluation_mode": "current_policy_on_historical_prices",
+    "enabled": true,
+    "weights": {
+      "board": 0.1,
+      "chanlun": 0.1,
+      "rps": 0.08000000000000002,
+      "news": 0.06,
+      "emotion": 0.06,
+      "image_strategy": 0.6
+    },
+    "eligible_rows": 5311,
+    "note": "图片蒸馏策略优先；评分表示形态匹配，不是上涨概率。历史行情套用当前规则不构成样本外验证。"
+  },
+  "rendererErrors": [],
+  "evidencePanelLoaded": true
+}

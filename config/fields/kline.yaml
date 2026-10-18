@@ -1,0 +1,108 @@
+# Hawk · 字段映射：K 线（腾讯前复权 / 新浪不复权）
+# 依据：samples/tencent_kline.json、samples/tencent_minute_m5.json、samples/sina_kline.json
+# verified_at: 2026-10-08T20:05:09+08:00
+#
+# ★重要差异（已实测确认，不可混用）：
+#   腾讯 K 线数组顺序 = [日期, 开, 收, 高, 低, 成交量]
+#   新浪 K 线为 dict，键名 = day/open/high/low/close/volume（顺序按字母，非时间序列）
+#   两者第 2~5 位的顺序不同，混用会导致高低价错位。
+
+sources:
+
+  tencent_kline:
+    endpoint: https://web.ifzq.gtimg.cn/appstock/app/fqkline/get
+    params_template: "param=<prefix><code>,<period>,,,<count>,<fq>"
+    response_type: json_nested
+    #实测返回结构： data -><symbol> -> {qfqday|day: [[...], ...], qt: {...}}
+    list_key_candidates: ["qfqday", "day", "hfqday"]   # 按复权方式命中不同键
+    verified_at: "2026-10-08T20:05:09+08:00"
+    sample_file: samples/tencent_kline.json
+    # 实测首元素： ["2026-09-23","1255.030","1251.240","1271.500","1250.890","30981.000"]
+    array_index:
+      0: trade_date    # YYYY-MM-DD
+      1: open
+      2: close         # ★注意：收盘价在第2位，不是第4位
+      3: high
+      4: low
+      5: volume        # 单位：手
+    period_map:
+      day: day
+      week: week
+      month: month
+    fq_map:
+      qfq: qfqday
+      hfq: hfqday
+      "": day
+    unit_scale:
+      volume: 100.0      # 手 -> 股
+
+  tencent_minute:
+    endpoint: https://ifzq.gtimg.cn/appstock/app/kline/mkline
+    params_template: "param=<prefix><code>,<mperiod>,,,<count>"
+    response_type: json_nested
+    # 实测 data -> <symbol> -> {m5: [...], m30: [...], ...}
+    list_key: "<mperiod>"                # 键名即周期名本身
+    verified_at: "2026-10-08T20:05:09+08:00"
+    sample_file: samples/tencent_minute_m5.json
+    # 实测首元素： ["202609161455","1259.65","1258.41","1259.91","1258.16","809.51",{},"0.6476"]
+    array_index:
+      0: ts             # YYYYMMDDHHMM，分钟K 无分隔符
+      1: open
+      2: close
+      3: high
+      4: low
+      5: volume         # 实测单位：手
+      7: amount_wan     # 成交额（万元）
+    period_map:
+      m1: m1
+      m5: m5
+      m15: m15
+      m30: m30
+      m60: m60
+    unit_scale:
+      volume: 100.0
+      amount_wan: 10000.0
+    notes:
+      - "该接口一次返回约 480+ 根（超出请求 count），落库时按 (code, period, ts) 去重 upsert"
+      - "count 参数未严格生效，因此 M1-4 的分钟线增量需按 ts 裁剪而非依赖 count"
+
+  sina_kline:
+    endpoint: https://money.finance.sina.com.cn/quotes_service/api/json_v2.php/CN_MarketData.getKLineData
+    params_template: "symbol=<prefix><code>&scale=<240|60|30|15|5>&ma=no&datalen=<n>"
+    response_type: json_array_of_dict
+    verified_at: "2026-10-08T20:05:09+08:00"
+    sample_file: samples/sina_kline.json
+    dict_fields:
+      day: trade_date    # YYYY-MM-DD
+      open: open
+      high: high
+      low: low
+      close: close
+      volume: volume     # 实测单位：股（茅台 2516757 与腾讯 25168 手一致）
+    scale_map:      # scale 单位为分钟
+      240: 1d
+      60: 60m
+      30: 30m
+      15: 15m
+      5: 5m
+    unit_scale:
+      volume: 1.0
+    fq: none           # 该接口无复权参数，返回不复权价
+    notes:
+      - "不复权，仅可用于当日校验与对比；回测统一用腾讯 qfq"
+      - "datalen 参数实测生效（请求 8 返回 8 根）"
+
+# klt 周期参数（附录 A.2）—— 东财专用，当前本机不可达，保留待换网络环境验证
+klt_map:
+  1: 1m
+  5: 5m
+  15: 15m
+  30: 30m
+  60: 60m
+  101: 1d
+  102: 1w
+  103: 1M
+
+notes:
+  - "复权口径：回测与缠论计算统一用 qfq（前复权），同时保存 adj_factor"
+  - "停牌日接口不返回数据 -> 落库时标记 is_suspend，缠论引擎必须跳过该bar（附录 C.3）"

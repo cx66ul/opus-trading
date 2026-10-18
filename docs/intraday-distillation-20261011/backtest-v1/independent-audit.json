@@ -1,0 +1,9 @@
+{
+  "accounts_checked": 162,
+  "fills_checked": 427,
+  "hashes_unchanged": true,
+  "ledger_reconciled": true,
+  "T1_checked": true,
+  "two_bar_latency_checked": true,
+  "no_actual_exchange_fill_claim": true
+}

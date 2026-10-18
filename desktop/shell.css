@@ -1,0 +1,75 @@
+/* Opus 辅助交易 · 桌面壳层样式
+ * ★ 与主界面（backend/web/styles.css）视觉保持一致：同一套深色配色，
+ *   但壳层用的是 CSS 变量而非硬编码，方便统一改。 */
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --line: #262b35;
+  --fg: #e8eaed;
+  --dim: #9aa0aa;
+  --ok: #1a9e5f;
+  --warn: #c8952b;
+  --bad: #e0392e;
+  --accent: #4a9eff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--fg);
+  font: 14px/1.6 "Microsoft YaHei", "Segoe UI", system-ui, sans-serif;
+  height: 100vh; overflow: hidden;
+}
+.screen { display: none; height: 100vh; align-items: center; justify-content: center; padding: 32px; }
+.screen.on { display: flex; }
+#scr-boot { flex-direction: column; }
+
+/* ── 启动 ── */
+.brand { text-align: center; margin-bottom: 28px; }
+.brand .logo { width: 84px; height: 84px; border-radius: 18px; }
+.brand h1 { font-size: 24px; letter-spacing: .5px; margin-top: 12px; }
+.brand .sub { color: var(--dim); font-size: 13px; margin-top: 4px; }
+.boot-status { text-align: center; }
+.spinner {
+  width: 26px; height: 26px; margin: 0 auto 14px;
+  border: 2px solid var(--line); border-top-color: var(--accent);
+  border-radius: 50%; animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.dim { color: var(--dim); font-size: 12px; }
+
+/* ── 盒子 ── */
+.box {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 12px; padding: 26px 28px; max-width: 720px; width: 100%;
+}
+.box.wide { max-width: 940px; }
+.box h2 { font-size: 17px; margin-bottom: 6px; }
+.box.err { border-color: #4a2020; }
+.why { color: #f0b5b0; margin: 10px 0 18px; white-space: pre-wrap; }
+
+/* ── 按钮 ── */
+.acts { display: flex; gap: 10px; margin-top: 18px; }
+button {
+  padding: 8px 18px; border-radius: 8px; border: 1px solid var(--line);
+  background: #1e222b; color: var(--fg); cursor: pointer; font-size: 13px;
+}
+button:hover { background: #252a35; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #07101f; font-weight: 600; }
+button.primary:hover { filter: brightness(1.08); }
+
+/* ── 向导表 ── */
+table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 13px; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { color: var(--dim); font-weight: 500; }
+td.w { width: 68px; }
+.tag { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 12px; }
+.tag.pass { background: rgba(26,158,95,.16); color: #4cd18a; }
+.tag.skip { background: rgba(200,149,43,.16); color: #e0b955; }
+.tag.block { background: rgba(224,57,46,.16); color: #f08a80; }
+code { background: #0c0e12; padding: 1px 6px; border-radius: 4px; font-size: 12px; color: #b9c6e0; }
+pre {
+  background: #0c0e12; border: 1px solid var(--line); border-radius: 8px;
+  padding: 12px; font-size: 12px; color: #b9c6e0; overflow: auto;
+  max-height: 260px; white-space: pre-wrap;
+}
+details.detail { margin-top: 16px; }
+details.detail summary { cursor: pointer; color: var(--dim); font-size: 13px; }

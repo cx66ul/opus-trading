@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "source": "netease_quote",
+    "url": "https://api.money.126.net/data/feed/0600519",
+    "params": {},
+    "headers": {},
+    "encoding": "utf-8",
+    "fetched_at": "2026-10-08T20:05:11+08:00",
+    "status": 0,
+    "error": "ConnectError: [Errno 11001] getaddrinfo failed"
+  },
+  "raw": ""
+}

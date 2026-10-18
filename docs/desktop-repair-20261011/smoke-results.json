@@ -1,0 +1,22 @@
+{
+  "firstWindowMs": 1084,
+  "mainPageMs": 3336,
+  "dataReadyMs": 3558,
+  "reopenMs": 567,
+  "info": {
+    "version": "0.2.1",
+    "root": "C:/Users/cxul/WorkBuddy/2026-10-08-19-58-20/hawk",
+    "python": "C:\\Users\\cxul\\AppData\\Local\\Programs\\Opus\\resources\\runtime\\python.exe",
+    "port": 8877,
+    "dev": false,
+    "data_dir": "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\data",
+    "log_dir": "C:\\Users\\cxul\\AppData\\Local\\Temp\\opus-smoke-8z16jk\\logs"
+  },
+  "initialPid": 50548,
+  "restartedPid": 54368,
+  "overviewStatus": 200,
+  "text": "OPUS\n决策副驾 · 只读视图 · 不接券商下单接口\n交易日 2026-10-09\n概览\n自选股\n每日推荐\n个股详情\n板块强度\n系统状态\n全市场成交额（volume×close）\n1.95 万亿\n5557 只有K 线\n涨 / 跌家数\n3293 / 2146\n分母 5557（有昨收的样本）\n市场状态\n修复\nscore 44.7 · 仓位上限 +40%\n涨停 / 跌停家数\n42 / 14\n炸板率 +47.50%\n市场状态明细 market_regime\n记录时间\n2026-10-08 15:00:00\n状态\nrepair（修复）\n评分\n44.67\n上涨占比\n+31.34%\n炸板率\n+47.50%\nmarket_regime 最新只到 2026-10-08，非 2026-10-09\n说明 口径纪律\n· as_of：as_of 归一到库内交易日，不使用墙钟（铁律二）（当前 2026-10-09）\n· 成交额由 volume × close 现算——kline_daily.amount 全库为 NULL， kline_min.amount 已废弃（逐股漂移实测跨 4 个数量级）。\n· 涨跌家数的分母是「有上一根 K 线收盘」的样本数，不是当日标的数； 新股/停牌不参与。\n· 配色：涨=红、 跌=绿，全局不得反转。",
+  "rendererErrors": [],
+  "reloadPreservedPid": true,
+  "trayReopenPreservedPid": true
+}

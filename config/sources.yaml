@@ -1,0 +1,92 @@
+# Hawk · 数据源可用性与降级链
+# 依据：samples/reachability.json（2026-10-08 20:05 实测，裸连 noproxy）
+#
+# ★ 本机网络的实测结论（与提示词附录 A 的原始假设有出入，必须以此为准）：
+#
+#   push2.eastmoney.com        ❌ 不可达（TCP 层被断开，非参数问题）
+#   push2his.eastmoney.com     ❌ 不可达（同上）
+#      → 已排除：加 ut 令牌、指定 IP(47.112.165.11 / 101.226.30.206)、
+#        http/https、82.push2 / push2delay / 1.push2 子域，全部失败
+#      → 但同属东财的 quote.eastmoney.com(302) 与 push2ex.eastmoney.com(200) 正常
+#      → 结论：拦截发生在 push2/push2his 的服务集群层，非 DNS、非参数、非本机防火墙全局策略
+#
+#   push2ex.eastmoney.com      ✅ 可达 200 → 涨停池/炸板池/跌停池可用
+#   quote.eastmoney.com        ✅ 可达 302 → 仅网页，不可作数据接口
+#   qt.gtimg.cn(腾讯)          ✅ 可达 200，GBK，批量多只
+#   web.ifzq.gtimg.cn(腾讯K线) ✅ 可达 200
+#   ifzq.gtimg.cn (腾讯分钟)    ✅ 可达 200
+#   hq.sinajs.cn   (新浪行情)   ✅ 可达 200（需 Referer）
+#   vip.stock.finance.sina.com.cn(新浪列表/分时) ✅ 可达 200
+#   money.finance.sina.com.cn  (新浪日线)      ✅ 可达 200
+#   api.money.126.net (网易)   ❌ DNS 解析失败（getaddrinfo failed）
+#
+# 影响与应对（对应附录 A.2「多源冗余 + 自动降级」）：
+#   1. 全市场行情扫描主源由东财改为「新浪 hs_a 单节点」（实测单节点覆盖沪深京全部 A 股）
+#   2. 日线历史主源改为腾讯 qfq，备源新浪不复权（仅做校验，不入回测库）
+#   3. 分钟线主源腾讯 mkline
+#   4. 涨停池/炸板池/跌停池仍用东财 push2ex（可用）
+#   5. 板块与资金流原计划依赖 push2 clist，当前不可用 → 列为 M1-4 阻塞项，
+#      需换网络环境（校园网/VPN）复测，或引入替代源
+
+reachability_checked_at: "2026-10-08T20:05:09+08:00"
+reachability_report: samples/reachability.json
+network_note: "探测使用 httpx trust_env=False（绕过沙箱代理）。若在沙箱内复测，必须显式绕过 HTTP_PROXY，否则 localhost/内网探测会得到假502。"
+
+order: [tencent, sina, eastmoney]     # 降级顺序（实测可用性排序，不含不可达的 push2）
+
+tencent:
+  qps: 10
+  concurrency: 3
+  endpoints:
+    realtime: https://qt.gtimg.cn/q=<codes>        # 跟踪池 3s 轨道
+    kline:    https://web.ifzq.gtimg.cn/appstock/app/fqkline/get
+    minute:   https://ifzq.gtimg.cn/appstock/app/kline/mkline
+  fields_config: config/fields/tencent_quote.yaml
+  encoding: gbk
+  max_codes_per_request: 60
+  reachable: true
+
+sina:
+  qps: 5
+  concurrency: 2
+  referer: "https://finance.sina.com.cn"
+  endpoints:
+    realtime: https://hq.sinajs.cn/list=<codes>
+    list:     https://vip.stock.finance.sina.com.cn/quotes_service/api/json_v2.php/Market_Center.getHQNodeData
+    kline:    https://money.finance.sina.com.cn/quotes_service/api/json_v2.php/CN_MarketData.getKLineData
+    minute:   https://vip.stock.finance.sina.com.cn/quotes_service/view/vMS_tradedetail.php
+  fields_config: config/fields/sina_list.yaml
+  encoding: gbk
+  page_size: 100                # 实测 50/80/100 均可用
+  reachable: true
+
+eastmoney:
+  qps: 2
+  concurrency: 1
+  endpoints:
+    ztpool:   https://push2ex.eastmoney.com/getTopicZTPool      # ✅ 可达
+    zbpool:   https://push2ex.eastmoney.com/getTopicZBPool      # 待验证
+    dtpool:   https://push2ex.eastmoney.com/getTopicDTPool      # 待验证
+    clist:    https://push2.eastmoney.com/api/qt/clist/get      # ❌ 本机不可达
+    kline:    https://push2his.eastmoney.com/api/qt/stock/kline/get  # ❌ 本机不可达
+  fields_config: config/fields/eastmoney_ztpool.yaml
+  reachable: partial           # 仅 push2ex 子域可用
+  note: "clist/kline 在当前网络下不可用，全市场扫描与板块/资金流能力因此受限"
+
+# 限流与容错（附录 A.3 + 3.3）
+limits:
+  backoff_base_s: 1
+  backoff_max_s: 60
+  backoff_sequence: [1, 2, 4, 8, 16, 32, 60]
+  jitter_ratio: 0.30           # 请求间隔 ±30% 抖动
+  fail_switch_threshold: 5     # 连续失败 5 次切备源
+  parse_fail_alert_rate: 0.05  # 解析失败率 > 5% 告警
+  queue_on_exceed: true        # 超限排队而非拒绝
+
+# 字段合理性校验（免费源字段会无声变动，这是最常见的故障）
+field_sanity:
+  - {field: price,   rule: "> 0"}
+  - {field: pct_chg, rule: "|x| <= 25",note: "A股涨跌幅上限，异常值说明字段错位}
+  - {field: code,    rule: "matches ^\\d{6}$"}
+  - {field: trade_date, rule: "matches ^\\d{4}-\\d{2}-\\d{2}$"}
+  - {field: amount,  rule: ">= 0", note: "负数或None 说明字段错位"}

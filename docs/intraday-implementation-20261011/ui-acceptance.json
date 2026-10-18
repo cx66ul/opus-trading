@@ -1,0 +1,102 @@
+{
+  "periods": [
+    "line",
+    "m1",
+    "m5",
+    "m30",
+    "m60",
+    "daily"
+  ],
+  "auto_refresh": true,
+  "response_race": true,
+  "stale_warning": true,
+  "page_errors": [],
+  "intraday": {
+    "running": true,
+    "state": "closed",
+    "latest": "2026-10-09 15:00:00",
+    "heartbeat": "2026-10-11 22:00:41",
+    "error": "",
+    "service_error": ""
+  },
+  "mail": {
+    "enabled": true,
+    "running": true,
+    "error": ""
+  },
+  "news": {
+    "running": true,
+    "interval_seconds": 60,
+    "sources": [
+      {
+        "source": "jin10",
+        "state": "ok",
+        "attempted_at": "2026-10-11T22:00:24+08:00",
+        "saved": 0,
+        "duplicates": 20,
+        "fetched_at": "2026-10-11T22:00:24+08:00",
+        "fetched": 20,
+        "latest_item": "2026-10-11T21:54:34+08:00",
+        "skipped": {
+          "received": 21,
+          "locked": 1,
+          "ads": 0,
+          "empty": 0,
+          "invalid": 0
+        },
+        "error": null,
+        "last_success": "2026-10-11T22:00:24+08:00",
+        "stale": false,
+        "raw_total": 92,
+        "pending": 89
+      },
+      {
+        "source": "sina_7x24",
+        "state": "ok",
+        "attempted_at": "2026-10-11T22:00:25+08:00",
+        "saved": 2,
+        "duplicates": 38,
+        "fetched_at": "2026-10-11T22:00:25+08:00",
+        "fetched": 40,
+        "latest_item": "2026-10-11 22:00:23",
+        "skipped": {},
+        "error": null,
+        "last_success": "2026-10-11T22:00:25+08:00",
+        "stale": false,
+        "raw_total": 8500,
+        "pending": 8320
+      }
+    ],
+    "recent": [
+      {
+        "ts": "2026-10-11T21:54:34+08:00",
+        "content": "巴基斯坦外交部长达尔：指示我们驻利雅得大使馆与有关部门协调，为受伤的巴基斯坦公民提供援助。",
+        "title": null
+      },
+      {
+        "ts": "2026-10-11T21:53:48+08:00",
+        "content": "巴基斯坦外交部长伊斯哈克·达尔：巴基斯坦谴责胡塞武装对利雅得国王哈立德国际机场的袭击。与沙特当局保持联系，密切关注局势。",
+        "title": null
+      },
+      {
+        "ts": "2026-10-11T21:51:35+08:00",
+        "content": "【SpaceXAI官方账号更名为SpaceXSI】金十数据10月11日讯，马斯克当地时间10月10日在社交平台发布一张截图，显示SpaceXAI的官方账号已更名为“SpaceX Super Intelligence”（@ SpaceXSI）。",
+        "title": null
+      },
+      {
+        "ts": "2026-10-11T21:47:34+08:00",
+        "content": "【天津：有序实施商品住房现房销售】金十数据10月11日讯，天津市住房城乡建设委、市规划资源局、天津金融监管局发布关于贯彻落实《关于完善商品住房销售制度的通知》的实施意见。2026年8月28日后新发布国有建设用地使用权出让公告的商品住房项目实行预售的，单体建筑应完成主体结构封顶。项目预售资金实行全额、全过程监管；项目竣工验收、水电气热等配套设施具备交付条件且取得验收合格意见后，方可解除资金监管。2026年8月28日起，新发布出让公告的商品住房项目，优先选择现房销售；其他商品住房项目鼓励实行现房销售。实行现房销售的商品住房项目具备交付条件，完成不动产首次登记后，房地产开发企业应当编制现房销售方案，向市住房城乡建设委（滨海新区项目向滨海新区住房建设委）申请办理现房销售备案后，按照现房销售方案进行销售。所销售房屋及建设用地使用权应当无抵押、查封等限制交易的情形，确保土地房屋权属清晰。",
+        "title": null
+      },
+      {
+        "ts": "2026-10-11T21:47:05+08:00",
+        "content": "据福克斯新闻：美国财长贝森特表示，伊朗每晚都发射无人机，但已失去侦察能力，其无人机正在攻击一些船只。",
+        "title": null
+      }
+    ],
+    "analysis": {
+      "processed": 0,
+      "state": "idle"
+    }
+  }
+}

@@ -1,0 +1,2639 @@
+{
+  "fetched_at": "2026-10-10T16:45:11+08:00",
+  "board_count": 17,
+  "records": 329,
+  "data": [
+    {
+      "code": "300182",
+      "name": "捷成股份",
+      "pct_chg": 10.98,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "300133",
+      "name": "华策影视",
+      "pct_chg": 10.85,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "601595",
+      "name": "上海电影",
+      "pct_chg": 10.0,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "600715",
+      "name": "文投控股",
+      "pct_chg": 10.0,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "000892",
+      "name": "欢瑞世纪",
+      "pct_chg": 9.98,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "002343",
+      "name": "慈文传媒",
+      "pct_chg": 9.95,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "001330",
+      "name": "博纳影业",
+      "pct_chg": 9.94,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "300291",
+      "name": "百纳千成",
+      "pct_chg": 8.47,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "002292",
+      "name": "奥飞娱乐",
+      "pct_chg": 7.62,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "603721",
+      "name": "中广天择",
+      "pct_chg": 6.92,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "000802",
+      "name": "北京文化",
+      "pct_chg": 6.58,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "300528",
+      "name": "幸福蓝海",
+      "pct_chg": 6.22,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "603103",
+      "name": "横店影视",
+      "pct_chg": 6.19,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "600088",
+      "name": "中视传媒",
+      "pct_chg": 5.58,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "300426",
+      "name": "华智数媒",
+      "pct_chg": 5.26,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "300251",
+      "name": "光线传媒",
+      "pct_chg": 4.82,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "600977",
+      "name": "中国电影",
+      "pct_chg": 3.96,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "002739",
+      "name": "儒意电影",
+      "pct_chg": 3.88,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "002905",
+      "name": "金逸影视",
+      "pct_chg": 3.78,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "300027",
+      "name": "ST华谊",
+      "pct_chg": 3.66,
+      "board_code": "881274",
+      "board_name": "影视院线",
+      "board_type": "industry"
+    },
+    {
+      "code": "920021",
+      "name": "流金科技",
+      "pct_chg": 20.14,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300364",
+      "name": "中文在线",
+      "pct_chg": 20.01,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300413",
+      "name": "芒果超媒",
+      "pct_chg": 19.98,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "301551",
+      "name": "无线传媒",
+      "pct_chg": 13.04,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "601929",
+      "name": "吉视传媒",
+      "pct_chg": 10.13,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "603096",
+      "name": "新经典",
+      "pct_chg": 10.03,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "pct_chg": 10.01,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "605168",
+      "name": "三人行",
+      "pct_chg": 10.01,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "601811",
+      "name": "新华文轩",
+      "pct_chg": 9.99,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "603533",
+      "name": "掌阅科技",
+      "pct_chg": 9.99,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "605577",
+      "name": "龙版传媒",
+      "pct_chg": 9.98,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "002181",
+      "name": "粤传媒",
+      "pct_chg": 9.95,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300770",
+      "name": "新媒股份",
+      "pct_chg": 9.86,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "301171",
+      "name": "易点天下",
+      "pct_chg": 9.19,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "301052",
+      "name": "果麦文化",
+      "pct_chg": 8.69,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300987",
+      "name": "川网传媒",
+      "pct_chg": 8.06,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300781",
+      "name": "因赛集团",
+      "pct_chg": 7.4,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300418",
+      "name": "昆仑万维",
+      "pct_chg": 7.27,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300788",
+      "name": "中信出版",
+      "pct_chg": 7.19,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "300805",
+      "name": "电声股份",
+      "pct_chg": 7.06,
+      "board_code": "881164",
+      "board_name": "文化传媒",
+      "board_type": "industry"
+    },
+    {
+      "code": "601069",
+      "name": "西部黄金",
+      "pct_chg": 9.98,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "000975",
+      "name": "山金国际",
+      "pct_chg": 7.77,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "001337",
+      "name": "四川黄金",
+      "pct_chg": 6.98,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "300139",
+      "name": "晓程科技",
+      "pct_chg": 6.91,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "600489",
+      "name": "中金黄金",
+      "pct_chg": 6.84,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "600988",
+      "name": "赤峰黄金",
+      "pct_chg": 5.91,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "002155",
+      "name": "湖南黄金",
+      "pct_chg": 5.27,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "pct_chg": 4.87,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "000426",
+      "name": "兴业银锡",
+      "pct_chg": 4.1,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "000506",
+      "name": "招金黄金",
+      "pct_chg": 3.83,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "002237",
+      "name": "恒邦股份",
+      "pct_chg": 3.49,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "002716",
+      "name": "湖南白银",
+      "pct_chg": 3.37,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "600547",
+      "name": "山东黄金",
+      "pct_chg": 2.8,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "600961",
+      "name": "株冶集团",
+      "pct_chg": 1.62,
+      "board_code": "881169",
+      "board_name": "贵金属",
+      "board_type": "industry"
+    },
+    {
+      "code": "920087",
+      "name": "秋乐种业",
+      "pct_chg": 13.63,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "300189",
+      "name": "神农种业",
+      "pct_chg": 10.4,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "600354",
+      "name": "敦煌种业",
+      "pct_chg": 10.02,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "600371",
+      "name": "万向德农",
+      "pct_chg": 9.99,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "601118",
+      "name": "海南橡胶",
+      "pct_chg": 9.98,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "920403",
+      "name": "康农种业",
+      "pct_chg": 7.57,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "600313",
+      "name": "农发种业",
+      "pct_chg": 6.83,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "600108",
+      "name": "亚盛集团",
+      "pct_chg": 6.8,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "002041",
+      "name": "登海种业",
+      "pct_chg": 6.42,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "600540",
+      "name": "新赛股份",
+      "pct_chg": 5.88,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "000713",
+      "name": "国投丰乐",
+      "pct_chg": 5.76,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "601952",
+      "name": "苏垦农发",
+      "pct_chg": 4.92,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "600359",
+      "name": "新农开发",
+      "pct_chg": 4.79,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "000998",
+      "name": "隆平高科",
+      "pct_chg": 4.74,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "600598",
+      "name": "北大荒",
+      "pct_chg": 4.11,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "920964",
+      "name": "润农节水",
+      "pct_chg": 3.79,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "300511",
+      "name": "雪榕生物",
+      "pct_chg": 3.54,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "002679",
+      "name": "福建金森",
+      "pct_chg": 3.3,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "300970",
+      "name": "华绿生物",
+      "pct_chg": 3.06,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "300021",
+      "name": "大禹节水",
+      "pct_chg": 2.65,
+      "board_code": "881101",
+      "board_name": "种植业与林业",
+      "board_type": "industry"
+    },
+    {
+      "code": "300369",
+      "name": "绿盟科技",
+      "pct_chg": 20.02,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "688152",
+      "name": "麒麟信安",
+      "pct_chg": 20.0,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "920592",
+      "name": "华信永道",
+      "pct_chg": 19.75,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "688244",
+      "name": "永信至诚",
+      "pct_chg": 16.22,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "688561",
+      "name": "奇安信",
+      "pct_chg": 11.21,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "688225",
+      "name": "亚信安全",
+      "pct_chg": 10.8,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "002212",
+      "name": "天融信",
+      "pct_chg": 10.04,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "603232",
+      "name": "格尔软件",
+      "pct_chg": 9.97,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "601519",
+      "name": "大智慧",
+      "pct_chg": 9.95,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "688023",
+      "name": "安恒信息",
+      "pct_chg": 9.73,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "300378",
+      "name": "鼎捷数智",
+      "pct_chg": 9.52,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "300311",
+      "name": "任子行",
+      "pct_chg": 8.95,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "300454",
+      "name": "深信服",
+      "pct_chg": 8.65,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "300579",
+      "name": "数字认证",
+      "pct_chg": 8.48,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "920799",
+      "name": "艾融软件",
+      "pct_chg": 8.17,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "301269",
+      "name": "华大九天",
+      "pct_chg": 7.96,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "688095",
+      "name": "福昕软件",
+      "pct_chg": 7.76,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "688171",
+      "name": "纬德信息",
+      "pct_chg": 7.29,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "300624",
+      "name": "万兴科技",
+      "pct_chg": 7.09,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "000503",
+      "name": "国新健康",
+      "pct_chg": 6.84,
+      "board_code": "881272",
+      "board_name": "软件开发",
+      "board_type": "industry"
+    },
+    {
+      "code": "600892",
+      "name": "大晟文化",
+      "pct_chg": 8.15,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300467",
+      "name": "迅游科技",
+      "pct_chg": 5.88,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300459",
+      "name": "汤姆猫",
+      "pct_chg": 5.87,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "002425",
+      "name": "凯撒文化",
+      "pct_chg": 4.98,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300002",
+      "name": "神州泰岳",
+      "pct_chg": 4.64,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "603258",
+      "name": "电魂网络",
+      "pct_chg": 4.47,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300299",
+      "name": "富春股份",
+      "pct_chg": 4.21,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "002624",
+      "name": "完美世界",
+      "pct_chg": 4.18,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "002558",
+      "name": "巨人网络",
+      "pct_chg": 4.01,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300315",
+      "name": "掌趣科技",
+      "pct_chg": 3.93,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "600633",
+      "name": "浙数文化",
+      "pct_chg": 3.66,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300043",
+      "name": "星辉娱乐",
+      "pct_chg": 3.58,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300494",
+      "name": "盛天网络",
+      "pct_chg": 3.41,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "002517",
+      "name": "恺英网络",
+      "pct_chg": 3.31,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "002605",
+      "name": "姚记科技",
+      "pct_chg": 3.14,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300031",
+      "name": "宝通科技",
+      "pct_chg": 3.12,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300533",
+      "name": "冰川网络",
+      "pct_chg": 2.99,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "002602",
+      "name": "世纪华通",
+      "pct_chg": 2.56,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "603444",
+      "name": "吉比特",
+      "pct_chg": 2.0,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "300052",
+      "name": "中青宝",
+      "pct_chg": 1.78,
+      "board_code": "881275",
+      "board_name": "游戏",
+      "board_type": "industry"
+    },
+    {
+      "code": "603101",
+      "name": "汇嘉时代",
+      "pct_chg": 10.05,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600865",
+      "name": "百大集团",
+      "pct_chg": 10.04,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "605188",
+      "name": "国光连锁",
+      "pct_chg": 10.02,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "601086",
+      "name": "国芳集团",
+      "pct_chg": 10.02,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600785",
+      "name": "新华百货",
+      "pct_chg": 7.71,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "000759",
+      "name": "中百集团",
+      "pct_chg": 7.47,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600693",
+      "name": "东百集团",
+      "pct_chg": 7.29,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600838",
+      "name": "上海九百",
+      "pct_chg": 7.28,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600280",
+      "name": "中央商场",
+      "pct_chg": 7.09,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "000679",
+      "name": "大连友谊",
+      "pct_chg": 6.68,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600828",
+      "name": "茂业商业",
+      "pct_chg": 6.03,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600712",
+      "name": "南宁百货",
+      "pct_chg": 5.82,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600857",
+      "name": "宁波中百",
+      "pct_chg": 5.46,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "601116",
+      "name": "三江购物",
+      "pct_chg": 4.93,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "002177",
+      "name": "御银股份",
+      "pct_chg": 4.65,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600814",
+      "name": "杭州解百",
+      "pct_chg": 4.51,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "002818",
+      "name": "富森美",
+      "pct_chg": 4.38,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "002251",
+      "name": "步步高",
+      "pct_chg": 4.37,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "002187",
+      "name": "广百股份",
+      "pct_chg": 4.22,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "600824",
+      "name": "益民集团",
+      "pct_chg": 4.07,
+      "board_code": "881158",
+      "board_name": "零售",
+      "board_type": "industry"
+    },
+    {
+      "code": "300872",
+      "name": "天阳科技",
+      "pct_chg": 12.38,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "301218",
+      "name": "华是科技",
+      "pct_chg": 11.35,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "920790",
+      "name": "联迪信息",
+      "pct_chg": 6.97,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "603171",
+      "name": "税友股份",
+      "pct_chg": 6.3,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "920953",
+      "name": "国子软件",
+      "pct_chg": 6.28,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "920130",
+      "name": "立方控股",
+      "pct_chg": 6.03,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "300290",
+      "name": "ST荣科",
+      "pct_chg": 5.99,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "688004",
+      "name": "博汇科技",
+      "pct_chg": 5.94,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "920171",
+      "name": "志晟信息",
+      "pct_chg": 5.76,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "300170",
+      "name": "汉得信息",
+      "pct_chg": 5.68,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "600718",
+      "name": "东软集团",
+      "pct_chg": 5.63,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "920748",
+      "name": "路桥信息",
+      "pct_chg": 5.61,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "920092",
+      "name": "汉鑫科技",
+      "pct_chg": 5.4,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "000555",
+      "name": "神州信息",
+      "pct_chg": 5.29,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "603636",
+      "name": "南威软件",
+      "pct_chg": 5.23,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "600446",
+      "name": "金证股份",
+      "pct_chg": 5.22,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "920227",
+      "name": "美登科技",
+      "pct_chg": 4.98,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "300079",
+      "name": "数码视讯",
+      "pct_chg": 4.94,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "688365",
+      "name": "光云科技",
+      "pct_chg": 4.91,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "301085",
+      "name": "亚康股份",
+      "pct_chg": 4.74,
+      "board_code": "881271",
+      "board_name": "IT服务",
+      "board_type": "industry"
+    },
+    {
+      "code": "600621",
+      "name": "华鑫股份",
+      "pct_chg": 10.03,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "600864",
+      "name": "哈投股份",
+      "pct_chg": 5.82,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "600095",
+      "name": "湘财股份",
+      "pct_chg": 4.09,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "300059",
+      "name": "东方财富",
+      "pct_chg": 3.88,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "000783",
+      "name": "长江证券",
+      "pct_chg": 3.48,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "002945",
+      "name": "华林证券",
+      "pct_chg": 3.37,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601995",
+      "name": "中金公司",
+      "pct_chg": 3.01,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "002670",
+      "name": "国盛证券",
+      "pct_chg": 2.86,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601099",
+      "name": "太平洋",
+      "pct_chg": 2.65,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601555",
+      "name": "东吴证券",
+      "pct_chg": 2.63,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601696",
+      "name": "中银证券",
+      "pct_chg": 2.6,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "000776",
+      "name": "广发证券",
+      "pct_chg": 2.59,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601162",
+      "name": "天风证券",
+      "pct_chg": 2.58,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "002926",
+      "name": "华西证券",
+      "pct_chg": 2.34,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "000712",
+      "name": "锦龙股份",
+      "pct_chg": 2.25,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601136",
+      "name": "首创证券",
+      "pct_chg": 2.2,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601108",
+      "name": "财通证券",
+      "pct_chg": 2.14,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "600909",
+      "name": "华安证券",
+      "pct_chg": 2.13,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "601688",
+      "name": "华泰证券",
+      "pct_chg": 2.1,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "600155",
+      "name": "华创云信",
+      "pct_chg": 2.06,
+      "board_code": "881157",
+      "board_name": "证券",
+      "board_type": "industry"
+    },
+    {
+      "code": "920627",
+      "name": "力王股份",
+      "pct_chg": 24.12,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "300530",
+      "name": "领湃科技",
+      "pct_chg": 20.02,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "300340",
+      "name": "科恒股份",
+      "pct_chg": 15.89,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "688345",
+      "name": "博力威",
+      "pct_chg": 12.24,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "002805",
+      "name": "丰元股份",
+      "pct_chg": 10.02,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "600241",
+      "name": "时代万恒",
+      "pct_chg": 10.01,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "002733",
+      "name": "雄韬股份",
+      "pct_chg": 10.01,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "002058",
+      "name": "紫竹高科",
+      "pct_chg": 9.99,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "600478",
+      "name": "科力远",
+      "pct_chg": 9.91,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "920239",
+      "name": "长虹能源",
+      "pct_chg": 9.86,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "002709",
+      "name": "天赐材料",
+      "pct_chg": 9.15,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "301152",
+      "name": "天力锂能",
+      "pct_chg": 8.85,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "300769",
+      "name": "德方纳米",
+      "pct_chg": 7.21,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "920237",
+      "name": "力佳科技",
+      "pct_chg": 6.98,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "920289",
+      "name": "华汇智能",
+      "pct_chg": 6.74,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "603026",
+      "name": "石大胜华",
+      "pct_chg": 6.37,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "301513",
+      "name": "尚水智能",
+      "pct_chg": 6.02,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "301292",
+      "name": "海科新源",
+      "pct_chg": 5.91,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "301238",
+      "name": "瑞泰新材",
+      "pct_chg": 5.76,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "300409",
+      "name": "道氏技术",
+      "pct_chg": 4.95,
+      "board_code": "881281",
+      "board_name": "电池",
+      "board_type": "industry"
+    },
+    {
+      "code": "600882",
+      "name": "妙可蓝多",
+      "pct_chg": 9.99,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "920786",
+      "name": "骑士乳业",
+      "pct_chg": 7.0,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "002329",
+      "name": "皇氏集团",
+      "pct_chg": 6.06,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "600573",
+      "name": "惠泉啤酒",
+      "pct_chg": 5.85,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "605179",
+      "name": "一鸣食品",
+      "pct_chg": 5.49,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "001318",
+      "name": "阳光乳业",
+      "pct_chg": 4.68,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "300898",
+      "name": "熊猫乳品",
+      "pct_chg": 4.55,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "000523",
+      "name": "红棉股份",
+      "pct_chg": 4.29,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "300997",
+      "name": "欢乐家",
+      "pct_chg": 3.92,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "300892",
+      "name": "品渥食品",
+      "pct_chg": 3.6,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "000869",
+      "name": "张裕A",
+      "pct_chg": 3.31,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "002570",
+      "name": "贝因美",
+      "pct_chg": 3.2,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "002946",
+      "name": "新乳业",
+      "pct_chg": 3.1,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "603779",
+      "name": "威龙股份",
+      "pct_chg": 2.75,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "600429",
+      "name": "三元股份",
+      "pct_chg": 2.7,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "600597",
+      "name": "光明乳业",
+      "pct_chg": 2.62,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "300106",
+      "name": "西部牧业",
+      "pct_chg": 2.62,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "600300",
+      "name": "维维股份",
+      "pct_chg": 2.6,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "002461",
+      "name": "珠江啤酒",
+      "pct_chg": 2.31,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "000729",
+      "name": "燕京啤酒",
+      "pct_chg": 2.06,
+      "board_code": "881133",
+      "board_name": "饮料制造",
+      "board_type": "industry"
+    },
+    {
+      "code": "002082",
+      "name": "ST万邦",
+      "pct_chg": 10.02,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "002317",
+      "name": "众生药业",
+      "pct_chg": 10.01,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "002907",
+      "name": "华森制药",
+      "pct_chg": 6.41,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "002349",
+      "name": "精华制药",
+      "pct_chg": 5.96,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "300039",
+      "name": "上海凯宝",
+      "pct_chg": 4.25,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600129",
+      "name": "太极集团",
+      "pct_chg": 4.1,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600252",
+      "name": "中恒集团",
+      "pct_chg": 3.69,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600351",
+      "name": "亚宝药业",
+      "pct_chg": 3.67,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "300158",
+      "name": "振东制药",
+      "pct_chg": 3.11,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "603998",
+      "name": "方盛制药",
+      "pct_chg": 3.1,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600285",
+      "name": "羚锐制药",
+      "pct_chg": 3.04,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "002728",
+      "name": "特一药业",
+      "pct_chg": 3.02,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "300026",
+      "name": "红日药业",
+      "pct_chg": 2.79,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "002864",
+      "name": "盘龙药业",
+      "pct_chg": 2.74,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "603567",
+      "name": "珍宝岛",
+      "pct_chg": 2.66,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "002107",
+      "name": "沃华医药",
+      "pct_chg": 2.65,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600771",
+      "name": "广誉远",
+      "pct_chg": 2.64,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600566",
+      "name": "济川药业",
+      "pct_chg": 2.61,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600572",
+      "name": "康恩贝",
+      "pct_chg": 2.56,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "600479",
+      "name": "千金药业",
+      "pct_chg": 2.56,
+      "board_code": "881141",
+      "board_name": "中药",
+      "board_type": "industry"
+    },
+    {
+      "code": "000526",
+      "name": "学大教育",
+      "pct_chg": 5.56,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "003032",
+      "name": "传智教育",
+      "pct_chg": 4.07,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "605098",
+      "name": "行动教育",
+      "pct_chg": 3.85,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "300359",
+      "name": "全通教育",
+      "pct_chg": 3.45,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "002607",
+      "name": "中公教育",
+      "pct_chg": 3.26,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "002659",
+      "name": "凯文教育",
+      "pct_chg": 2.15,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "300338",
+      "name": "*ST开元",
+      "pct_chg": 2.02,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "603377",
+      "name": "ST东时",
+      "pct_chg": 1.66,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "300192",
+      "name": "科德教育",
+      "pct_chg": 1.49,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "600661",
+      "name": "昂立教育",
+      "pct_chg": 0.94,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "600455",
+      "name": "博通股份",
+      "pct_chg": 0.78,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "300492",
+      "name": "华图山鼎",
+      "pct_chg": 0.64,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "600730",
+      "name": "*ST高科",
+      "pct_chg": 0.34,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "300688",
+      "name": "创业黑马",
+      "pct_chg": -0.12,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "300010",
+      "name": "ST豆神",
+      "pct_chg": -0.4,
+      "board_code": "881178",
+      "board_name": "教育",
+      "board_type": "industry"
+    },
+    {
+      "code": "002696",
+      "name": "百洋股份",
+      "pct_chg": 10.07,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "600127",
+      "name": "金健米业",
+      "pct_chg": 10.0,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "000911",
+      "name": "*ST广糖",
+      "pct_chg": 7.26,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "000505",
+      "name": "京粮控股",
+      "pct_chg": 6.01,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "300999",
+      "name": "金龙鱼",
+      "pct_chg": 5.82,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "603151",
+      "name": "邦基科技",
+      "pct_chg": 5.27,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "000930",
+      "name": "中粮科技",
+      "pct_chg": 4.26,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "000972",
+      "name": "中基健康",
+      "pct_chg": 3.98,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "300138",
+      "name": "晨光生物",
+      "pct_chg": 3.68,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "pct_chg": 3.48,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "920371",
+      "name": "欧福蛋业",
+      "pct_chg": 3.43,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "600737",
+      "name": "中粮糖业",
+      "pct_chg": 3.24,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "000019",
+      "name": "深粮控股",
+      "pct_chg": 2.97,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "002385",
+      "name": "大北农",
+      "pct_chg": 2.59,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "001313",
+      "name": "粤海饲料",
+      "pct_chg": 2.54,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "002548",
+      "name": "金新农",
+      "pct_chg": 2.34,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "002481",
+      "name": "双塔食品",
+      "pct_chg": 2.3,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "603363",
+      "name": "傲农生物",
+      "pct_chg": 2.16,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "002311",
+      "name": "海大集团",
+      "pct_chg": 2.07,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "002852",
+      "name": "道道全",
+      "pct_chg": 1.97,
+      "board_code": "881103",
+      "board_name": "农产品加工",
+      "board_type": "industry"
+    },
+    {
+      "code": "605136",
+      "name": "丽人丽妆",
+      "pct_chg": 10.02,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "002127",
+      "name": "南极电商",
+      "pct_chg": 4.79,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "301110",
+      "name": "青木科技",
+      "pct_chg": 4.42,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "300792",
+      "name": "壹网壹创",
+      "pct_chg": 4.35,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "920065",
+      "name": "千岸科技",
+      "pct_chg": 3.86,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "002315",
+      "name": "焦点科技",
+      "pct_chg": 3.85,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "002803",
+      "name": "吉宏股份",
+      "pct_chg": 3.1,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "301381",
+      "name": "赛维时代",
+      "pct_chg": 2.25,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "300209",
+      "name": "行云科技",
+      "pct_chg": 2.04,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "301001",
+      "name": "凯淳股份",
+      "pct_chg": 2.04,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "301558",
+      "name": "三态股份",
+      "pct_chg": 1.92,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "603613",
+      "name": "国联股份",
+      "pct_chg": 1.52,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "002640",
+      "name": "跨境通",
+      "pct_chg": 0.81,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "600539",
+      "name": "狮头股份",
+      "pct_chg": 0.53,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "002024",
+      "name": "ST易购",
+      "pct_chg": 0.0,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "300518",
+      "name": "新迅达",
+      "pct_chg": -0.04,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "600365",
+      "name": "ST通葡",
+      "pct_chg": -1.75,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "300464",
+      "name": "星徽股份",
+      "pct_chg": -1.89,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "300592",
+      "name": "华凯易佰",
+      "pct_chg": -2.75,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "003010",
+      "name": "若羽臣",
+      "pct_chg": -3.02,
+      "board_code": "881177",
+      "board_name": "互联网电商",
+      "board_type": "industry"
+    },
+    {
+      "code": "601566",
+      "name": "九牧王",
+      "pct_chg": 9.98,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "600400",
+      "name": "红豆股份",
+      "pct_chg": 9.95,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "002029",
+      "name": "七匹狼",
+      "pct_chg": 7.94,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "605599",
+      "name": "菜百股份",
+      "pct_chg": 7.09,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "600107",
+      "name": "*ST尔雅",
+      "pct_chg": 6.76,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "600735",
+      "name": "ST新华锦",
+      "pct_chg": 4.61,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "002293",
+      "name": "罗莱生活",
+      "pct_chg": 4.42,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "603365",
+      "name": "水星家纺",
+      "pct_chg": 4.21,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "603900",
+      "name": "莱绅通灵",
+      "pct_chg": 4.16,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "002832",
+      "name": "比音勒芬",
+      "pct_chg": 3.97,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "002345",
+      "name": "潮宏基",
+      "pct_chg": 3.9,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "pct_chg": 3.87,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "920262",
+      "name": "太湖雪",
+      "pct_chg": 3.62,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "603665",
+      "name": "康隆达",
+      "pct_chg": 3.6,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "600630",
+      "name": "龙头股份",
+      "pct_chg": 3.39,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "002721",
+      "name": "金一文化",
+      "pct_chg": 3.14,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "002574",
+      "name": "明牌珠宝",
+      "pct_chg": 3.02,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "003041",
+      "name": "真爱美家",
+      "pct_chg": 2.79,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "600398",
+      "name": "海澜之家",
+      "pct_chg": 2.73,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "603608",
+      "name": "天创时尚",
+      "pct_chg": 2.71,
+      "board_code": "881136",
+      "board_name": "服装家纺",
+      "board_type": "industry"
+    },
+    {
+      "code": "002961",
+      "name": "瑞达期货",
+      "pct_chg": 6.54,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "600318",
+      "name": "新力金融",
+      "pct_chg": 5.95,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "600830",
+      "name": "香溢融通",
+      "pct_chg": 4.33,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "603123",
+      "name": "翠微股份",
+      "pct_chg": 4.22,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "603093",
+      "name": "南华期货",
+      "pct_chg": 3.29,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "000935",
+      "name": "四川双马",
+      "pct_chg": 3.07,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "600643",
+      "name": "爱建集团",
+      "pct_chg": 2.74,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "001236",
+      "name": "弘业期货",
+      "pct_chg": 2.46,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "000567",
+      "name": "海德股份",
+      "pct_chg": 1.89,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "600927",
+      "name": "永安期货",
+      "pct_chg": 1.84,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "603300",
+      "name": "海南华铁",
+      "pct_chg": 1.78,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "600120",
+      "name": "浙江东方",
+      "pct_chg": 1.52,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "000532",
+      "name": "华金资本",
+      "pct_chg": 1.5,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "000617",
+      "name": "中油资本",
+      "pct_chg": 1.38,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "600816",
+      "name": "建元信托",
+      "pct_chg": 1.26,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "000987",
+      "name": "越秀资本",
+      "pct_chg": 1.26,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "600390",
+      "name": "五矿资本",
+      "pct_chg": 1.25,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "002423",
+      "name": "中粮资本",
+      "pct_chg": 0.99,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "000415",
+      "name": "渤海租赁",
+      "pct_chg": 0.75,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    },
+    {
+      "code": "000563",
+      "name": "陕国投A",
+      "pct_chg": 0.69,
+      "board_code": "881283",
+      "board_name": "多元金融",
+      "board_type": "industry"
+    }
+  ]
+}

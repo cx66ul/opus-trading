@@ -1,0 +1,1029 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": [
+    {
+      "channel": [
+        1
+      ],
+      "data": {
+        "content": "",
+        "exclusive_to": [
+          "vip"
+        ],
+        "lock": true,
+        "vip_desc": "VIP专享快讯，解锁直达",
+        "vip_level": 1,
+        "vip_title": "摩根大通：油轮运费接近天花板 市场拐点看炼厂"
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011144623000800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            35
+          ],
+          "id": 2
+        },
+        {
+          "cids": [
+            99,
+            35
+          ],
+          "id": 1
+        },
+        {
+          "cids": [
+            16121,
+            16247
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            17992
+          ],
+          "id": 24
+        },
+        {
+          "cids": [
+            135
+          ],
+          "id": 3
+        },
+        {
+          "cids": [
+            1961
+          ],
+          "id": 16
+        },
+        {
+          "cids": [
+            1961
+          ],
+          "id": 26
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:46:23",
+      "type": 0,
+      "voice_status": "locked",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "沙特阿拉伯8月份工业生产同比下降23.5%。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011143300309800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16161
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            17958
+          ],
+          "id": 17952
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:33:00",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "【沙特利雅得所有学校11日至15日改为线上学习】金十数据10月11日讯，当地时间11日，沙特教育部要求首都利雅得所有学校11日至15日改为线上学习。沙特阿拉伯民航部门11日凌晨发布声明说，首都利雅得的国际机场10日遭袭造成12人死亡、309人受伤。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "央视新闻",
+        "source_link": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&t=1791699286834&item_id=6132034331914569756&channelId=1119",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011142437036800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16161
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            17992
+          ],
+          "id": 24
+        },
+        {
+          "cids": [
+            18754
+          ],
+          "id": 18458
+        },
+        {
+          "cids": [
+            32
+          ],
+          "id": 31
+        },
+        {
+          "cids": [
+            17444
+          ],
+          "id": 16502
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:24:37",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        5
+      ],
+      "data": {
+        "content": "",
+        "exclusive_to": [
+          "plus"
+        ],
+        "lock": true,
+        "vip_desc": "PLUS专享快讯，解锁直达",
+        "vip_title": "伊朗总统：应制定创意产业发展战略规划"
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011141316183800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16247
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            17992
+          ],
+          "id": 24
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:13:16",
+      "type": 0,
+      "voice_status": "locked",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "俄罗斯国防部：我们在夜间击落了479架乌克兰无人机。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140903644800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16171,
+            16124
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            17443
+          ],
+          "id": 16502
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:09:03",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "美国国家飓风中心：极其危险的飓风“西蒙”正逼近墨西哥西中部海岸。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140219566800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17525
+          ],
+          "id": 16502
+        },
+        {
+          "cids": [
+            16210
+          ],
+          "id": 29
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:02:19",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "世界银行行长彭安杰：中东战争的初步影响没有担心的那么严重，但压力再次加大。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140209326800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17214
+          ],
+          "id": 16497
+        },
+        {
+          "cids": [
+            17334
+          ],
+          "id": 26
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:02:09",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "世界银行行长彭安杰：需要更多努力以吸引私人资本流入较小、脆弱或受冲突影响的国家。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140143505800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17214
+          ],
+          "id": 16497
+        },
+        {
+          "cids": [
+            17334
+          ],
+          "id": 26
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:01:43",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "世界银行行长彭安杰：世界银行正与30到40个国家就与中东战争相关的危机援助进行对话。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140123685800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17214
+          ],
+          "id": 16497
+        },
+        {
+          "cids": [
+            17334
+          ],
+          "id": 26
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:01:23",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "世界银行行长彭安杰：如果今年的超级厄尔尼诺现象造成重大负面影响，将随时准备协助各国。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140113003800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17214
+          ],
+          "id": 16497
+        },
+        {
+          "cids": [
+            17334
+          ],
+          "id": 26
+        },
+        {
+          "cids": [
+            18091
+          ],
+          "id": 17952
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:01:13",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "美国国家飓风中心：今晚加利福尼亚州和美国西南部部分地区预计将有大雨。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140103866800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17525
+          ],
+          "id": 16502
+        },
+        {
+          "cids": [
+            18531
+          ],
+          "id": 18458
+        },
+        {
+          "cids": [
+            16121
+          ],
+          "id": 29
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:01:03",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "世界银行行长彭安杰：世界银行正在推进14或15项债务换发展的项目，以置换高价旧债。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011140056420800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17214
+          ],
+          "id": 16497
+        },
+        {
+          "cids": [
+            17334
+          ],
+          "id": 26
+        },
+        {
+          "cids": [
+            17953
+          ],
+          "id": 17952
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 14:00:56",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        3,
+        4
+      ],
+      "data": {
+        "content": "【2026广交会设计创新奖公布 张雪机车获至尊金奖】金十数据10月11日讯，从中国对外贸易中心了解到，2026年广交会设计创新奖（简称“CF奖”）名单已公布，共有174家企业的222件产品获奖，其中，张雪机车820RR获广交会CF奖至尊金奖，另一款获至尊金奖的产品是智巡胶囊机器人胃内窥镜系统。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "央视新闻",
+        "source_link": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=11485566976151858882&channelId=1119&toc_style_id=feeds_default&module=ccnews%3A%2F%2Fappclient%2Fpage%2Ffeeds%2Fdetail%3Furl%3Dhttps%253A%252F%252Fcontent-static.cctvnews.cctv.com%252Fsnow-book%252Findex.html%253Fitem_id%253D11485566976151858882%2526channelId%253D1119%2526toc_style_id%253Dfeeds_default",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011134730540800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            32
+          ],
+          "id": 31
+        },
+        {
+          "cids": [
+            16304
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            18105
+          ],
+          "id": 23
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 13:47:30",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "【俄国防部：击中乌克兰南部一数据中心】金十数据10月11日讯，俄罗斯国防部10月11日通报，俄军无人机当天凌晨击中乌克兰南部敖德萨市1处乌军用于处理、传输和存储信息的数据中心以及切尔诺莫尔斯克港1艘运送军用物资的货船。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011134351710800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            17443
+          ],
+          "id": 16502
+        },
+        {
+          "cids": [
+            16171,
+            16124
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            18060
+          ],
+          "id": 23
+        },
+        {
+          "cids": [
+            32
+          ],
+          "id": 31
+        },
+        {
+          "cids": [
+            18754
+          ],
+          "id": 18458
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 13:43:51",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "科威特半岛航空声明称，由于利雅得哈立德国王国际机场暂停运营，其飞往利雅得的航班受到影响。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011134044686800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16161,
+            16234,
+            16266
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            18385
+          ],
+          "id": 23
+        },
+        {
+          "cids": [
+            18754
+          ],
+          "id": 18458
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 13:40:44",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "【印度选举负责人辞职呼声升温 抗议者与警方对峙持续】金十数据10月11日讯，新德里周日准备迎接第二天的青年抗议活动，示威者要求印度选举事务负责人辞职。与此同时，一家法院下令释放“蟑螂”运动创始人迪普克和另外两名高层领导人。周六，他们乘坐飞机抵达德里时被拘留。当时该运动计划在德里中部的简塔·曼塔（Jantar Mantar）聚集数千人。周日，“蟑螂人民党”律师拉特纳·辛格发帖称他们已经获释，“条件是一年内不得破坏和平。”警方拘留了2000多人，并封锁德里市中心，以阻止周六的抗议活动。尽管地铁站重新开放、移动互联网服务恢复，周日仍有数千名警察和准军事人员部署在全市各地。警方称，抗议第一天被拘留的大多数人已于周六深夜获释。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011133259786800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16249,
+            16122
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            18681
+          ],
+          "id": 24
+        },
+        {
+          "cids": [
+            32
+          ],
+          "id": 31
+        },
+        {
+          "cids": [
+            18754
+          ],
+          "id": 18458
+        },
+        {
+          "cids": [
+            18687
+          ],
+          "id": 16502
+        },
+        {
+          "cids": [
+            17053
+          ],
+          "id": 16497
+        },
+        {
+          "cids": [
+            17953
+          ],
+          "id": 17952
+        },
+        {
+          "cids": [
+            8297
+          ],
+          "id": 15
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 13:32:59",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "【联合国人权高专办就新德里集会事件表达关切 印度外交部强烈回应】金十数据10月11日讯，联合国人权事务高级专员办事处周六对印度首都新德里大规模抗议活动前后发生的拘留行动表示关切，呼吁印度当局充分保障和平集会权利，立即释放所有遭任意拘留人员。印度外交部就该事件回应称，“印度是世界上最大的民主国家，和平集会的权利由我国宪法保障，并受到健全机构、独立司法机构和自由媒体的维护。与每个民主国家一样，印度公民在维护公共秩序和安全的前提下行使这一权利。人权高专办的关切没有根据，构成对印度内政不可接受的干涉。”",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011130217180800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16496
+          ],
+          "id": 30
+        },
+        {
+          "cids": [
+            16249
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            18754
+          ],
+          "id": 18458
+        },
+        {
+          "cids": [
+            17430
+          ],
+          "id": 16502
+        },
+        {
+          "cids": [
+            32
+          ],
+          "id": 31
+        },
+        {
+          "cids": [
+            17953
+          ],
+          "id": 17952
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 13:02:17",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "【印尼西爪哇省附近海域发生5.7级地震 暂无海啸风险】金十数据10月11日讯，据印尼气象、气候和地球物理局消息，当地时间10月11日10时30分，印尼西爪哇省苏加武眉西南193公里处海域发生5.7级地震，震源深度为10公里。本次地震暂无海啸风险。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011125812299800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16248
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            18754
+          ],
+          "id": 18458
+        },
+        {
+          "cids": [
+            18035,
+            18037
+          ],
+          "id": 27
+        },
+        {
+          "cids": [
+            32
+          ],
+          "id": 31
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 12:58:12",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        5
+      ],
+      "data": {
+        "content": "黄金、美债筑底进程稳步推进，中期选举前大概率维持盘整。德债收益率和贵金属期权成交变化，是后续值得观察的指标。点击查看...",
+        "link": "https://xnews.jin10.com/details/232133",
+        "pic": "https://gimg.jin10.com/news/25/04/164TPi_Kphw_MES8NDVFj.jpg/lite",
+        "source": "",
+        "source_link": "",
+        "tag": "VIP",
+        "title": "黄金投资者周报上新！"
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011125331466800",
+      "important": 1,
+      "kinds": [
+        {
+          "cids": [
+            34,
+            28
+          ],
+          "id": 2
+        },
+        {
+          "cids": [
+            34,
+            28
+          ],
+          "id": 1
+        },
+        {
+          "cids": [
+            18369
+          ],
+          "id": 22
+        },
+        {
+          "cids": [
+            18681
+          ],
+          "id": 24
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 12:53:31",
+      "type": 2,
+      "voice_status": "not_applicable",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "印度驻迪拜领事馆：在阿联酋哈伊马角海岸附近发生船只事件后，22名印度船员全部获救，安全无恙。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011123958239800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16249,
+            16123
+          ],
+          "id": 29
+        },
+        {
+          "cids": [
+            18754
+          ],
+          "id": 18458
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 12:39:58",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    },
+    {
+      "channel": [
+        1,
+        2,
+        3
+      ],
+      "data": {
+        "content": "印度“蟑螂”运动领导人迪普克的律师表示，迪普克已获释。",
+        "exclusive_to": [],
+        "pic": "",
+        "source": "",
+        "source_link": "",
+        "title": ""
+      },
+      "extras": {
+        "ad": false
+      },
+      "id": "20261011123305453800",
+      "important": 0,
+      "kinds": [
+        {
+          "cids": [
+            16249
+          ],
+          "id": 29
+        }
+      ],
+      "remark": [],
+      "tags": [],
+      "time": "2026-10-11 12:33:05",
+      "type": 0,
+      "voice_status": "ready",
+      "voices": null
+    }
+  ]
+}

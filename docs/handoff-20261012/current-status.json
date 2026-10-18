@@ -1,0 +1,621 @@
+{
+  "captured_at": "2026-10-12T00:50:53.334559+08:00",
+  "root": "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk",
+  "api": {
+    "/api/ready": {
+      "status": 200,
+      "data": {
+        "service": "hawk-webapi",
+        "ready": true,
+        "root": "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk"
+      }
+    },
+    "/api/mail/status": {
+      "status": 200,
+      "data": {
+        "enabled": true,
+        "running": true,
+        "activated_at": "2026-10-11T20:33:32+08:00",
+        "schedule": {
+          "premarket": [
+            9,
+            0
+          ],
+          "midday": [
+            12,
+            0
+          ],
+          "close": [
+            15,
+            5
+          ],
+          "weekly": [
+            10,
+            0
+          ]
+        },
+        "heartbeat": {
+          "at": "2026-10-12T00:50:42.042137+08:00",
+          "result": "idle",
+          "trading": true
+        },
+        "counts": {
+          "sent": 1
+        },
+        "error": ""
+      }
+    },
+    "/api/news/sources": {
+      "status": 200,
+      "data": {
+        "running": true,
+        "interval_seconds": 60,
+        "sources": [
+          {
+            "source": "jin10",
+            "state": "ok",
+            "attempted_at": "2026-10-12T00:50:27+08:00",
+            "saved": 0,
+            "duplicates": 16,
+            "fetched_at": "2026-10-12T00:50:27+08:00",
+            "fetched": 16,
+            "latest_item": "2026-10-12T00:34:41+08:00",
+            "skipped": {
+              "received": 21,
+              "locked": 5,
+              "ads": 0,
+              "empty": 0,
+              "invalid": 0
+            },
+            "error": null,
+            "last_success": "2026-10-12T00:50:27+08:00",
+            "stale": false,
+            "raw_total": 125,
+            "pending": 122
+          },
+          {
+            "source": "sina_7x24",
+            "state": "ok",
+            "attempted_at": "2026-10-12T00:50:27+08:00",
+            "saved": 1,
+            "duplicates": 39,
+            "fetched_at": "2026-10-12T00:50:27+08:00",
+            "fetched": 40,
+            "latest_item": "2026-10-12 00:49:46",
+            "skipped": {},
+            "error": null,
+            "last_success": "2026-10-12T00:50:27+08:00",
+            "stale": false,
+            "raw_total": 8583,
+            "pending": 8403
+          }
+        ],
+        "recent": [
+          {
+            "ts": "2026-10-12T00:34:41+08:00",
+            "content": "法国总统候选人让-吕克·梅朗雄：成为乌克兰问题中的共同交战方，或者成为沙特阿拉伯问题中的共同交战方，都是我们不希望看到的巨大危险。",
+            "title": null
+          },
+          {
+            "ts": "2026-10-12T00:32:39+08:00",
+            "content": "【沙特利雅得机场最新袭击报告有人受伤】金十数据10月12日讯，沙特民航管理机构表示，今天针对利雅得哈立德国王国际机场的袭击“造成了人员受伤”，但未说明具体受伤人数。该机构补充称，对损失情况的评估以及对设施安全状况的核查仍在进行中。",
+            "title": null
+          },
+          {
+            "ts": "2026-10-12T00:05:15+08:00",
+            "content": "【胡塞武装：过去24小时对沙特发动四轮袭击 打击机场和能源设施】金十数据10月12日讯，也门胡塞武装发言人表示：过去24小时内，胡塞武装部队使用多种弹道导弹、巡航导弹和无人机，对沙特实施了四次具有针对性的行动。第一次行动分三个阶段实施，自前天晚上开始，目标是利雅得哈立德国王机场。此次行动导致该机场航空运输活动中断，并被完全关闭。第二次行动针对位于沙特东部地区、隶属于沙特阿美的沙克达姆天然气设施。打击精准命中目标，并导致目标地点发生大规模火灾。第三次行动针对沙特东部地区阿美公司坦纳吉布石油设施。打击精准命中目标，并导致设施发生火灾。第四次行动针对沙特达曼法赫德国王机场，打击直接命中目标，并导致机场航空运输活动中断。胡塞武装再次警告全球所有企业不要运营飞往沙特机场的航班，麦加和麦地那圣地地区的机场和领空除外。",
+            "title": null
+          },
+          {
+            "ts": "2026-10-12T00:01:00+08:00",
+            "content": "也门胡塞武装发表声明，表示对沙特利雅得机场的袭击负责。",
+            "title": null
+          },
+          {
+            "ts": "2026-10-12T00:00:00+08:00",
+            "content": "【今日重点关注的财经数据与事件：2026年10月12日 周一】 ① 待定 IMF与世界银行年会召开 ② 次日00:10 美联储哈马克发表讲话",
+            "title": null
+          }
+        ],
+        "analysis": {
+          "processed": 0,
+          "state": "idle"
+        }
+      }
+    },
+    "/api/intraday/600152?period=m1": {
+      "status": 200,
+      "data": {
+        "code": "600152",
+        "name": "维科技术",
+        "period": "m1",
+        "trade_date": "2026-10-09",
+        "tracked": true,
+        "running": true,
+        "held": true,
+        "source": "腾讯公开分钟行情",
+        "latest": "2026-10-09 15:00:00",
+        "fetched_at": "2026-10-11 23:58:24",
+        "error": "",
+        "service_error": "",
+        "heartbeat": "2026-10-12 00:50:45",
+        "image_policy": {
+          "version": "intraday-images-20261011-v1",
+          "hash": "18a723a38a89f4522dcf7aa347f691bc228df4fbc170c6cda7b9994a71c4ea71",
+          "enabled": true,
+          "validation": "unvalidated_no_performance_claim",
+          "backtest": {
+            "state": "no_improvement_demonstrated",
+            "variants": {
+              "baseline_chan": {
+                "accounts": 3,
+                "closed_trades": 1,
+                "wins": 0,
+                "losses": 1,
+                "win_rate_pct": null,
+                "net_return_pct": 3.2280094611133423,
+                "buy_hold_return_pct": 2.3793333333333333,
+                "excess_vs_hold_pp": 0.8486761277800009,
+                "worst_account_drawdown_pct": 10.72405131714674,
+                "unclosed_t_count": 3,
+                "fees": 42.17761666
+              },
+              "fused_full": {
+                "accounts": 3,
+                "closed_trades": 0,
+                "wins": 0,
+                "losses": 0,
+                "win_rate_pct": null,
+                "net_return_pct": 2.4058412480533384,
+                "buy_hold_return_pct": 2.3793333333333333,
+                "excess_vs_hold_pp": 0.0265079147199964,
+                "worst_account_drawdown_pct": 9.820090441674271,
+                "unclosed_t_count": 3,
+                "fees": 40.86025584
+              },
+              "price_only_ablation": {
+                "accounts": 3,
+                "closed_trades": 23,
+                "wins": 7,
+                "losses": 16,
+                "win_rate_pct": 30.434782608695652,
+                "net_return_pct": 0.4792555783666626,
+                "buy_hold_return_pct": 2.3793333333333333,
+                "excess_vs_hold_pp": -1.900077754966672,
+                "worst_account_drawdown_pct": 14.711387710577759,
+                "unclosed_t_count": 3,
+                "fees": 464.8792649
+              }
+            },
+            "note": "三股10个完整交易日的5分钟历史回放：基线账户收益3.23%，完整约束融合版2.41%；量价实验版0.48%、23笔闭合T中7盈16亏。未证明提升。完整版缺少历史环境证据，闭合T为0，胜率不可估；账户收益含底仓和未闭合持仓。"
+          },
+          "note": "三图量价规则已融合；缺少当时大盘/板块证据时买点仅为候选。打板与KDJ/MA含糊语料未启用。做T最多按隔夜底仓1/3观察；未知可卖股数不提供交易股数。"
+        },
+        "state": "closed",
+        "fresh": false,
+        "session": false,
+        "new_signals_allowed": false,
+        "expected_at": null,
+        "bars": {
+          "count": 482,
+          "last": {
+            "d": "2026-10-09 15:00:00",
+            "o": 8.73,
+            "h": 8.73,
+            "l": 8.73,
+            "c": 8.73,
+            "v": 1190600.0,
+            "pct": null
+          }
+        },
+        "signals": {
+          "count": 106,
+          "last": {
+            "rule_id": "T06",
+            "kind": "T06_sell",
+            "reason": "MACD柱连续下降且价格连续下拐，动能减弱观察",
+            "sector": false,
+            "structure_at": "2026-10-09 14:57:00",
+            "price": 8.73,
+            "confidence": null,
+            "available_at": "2026-10-09 14:57:00",
+            "marker_price": 8.73,
+            "status": "confirmed",
+            "active": true,
+            "gate_reasons": [],
+            "reason_detail": "",
+            "version": "intraday-images-20261011-v1",
+            "policy_hash": "18a723a38a89f4522dcf7aa347f691bc228df4fbc170c6cda7b9994a71c4ea71",
+            "max_t_fraction": 0.3333333333333333,
+            "interpretation": "full",
+            "window_start": "2026-10-08 09:30:00",
+            "observed_at": "2026-10-11 23:48:33",
+            "mode": "replay"
+          }
+        },
+        "note": "B/S 为规则观察点，非收益预测或自动交易指令。弱信号仅为候选；确认后结构仍可能失效。卖点需自行核对 T+1、可用持仓和流动性。规则置信度不是胜率。"
+      }
+    },
+    "/api/overview": {
+      "status": 200,
+      "data": {
+        "trade_date": "2026-10-09",
+        "data_usable": true,
+        "latest_raw_day": "2026-10-09",
+        "day_resolution": {
+          "requested": "2026-10-09",
+          "used": "2026-10-09",
+          "fallback": false,
+          "usable_days": 252
+        },
+        "universe_threshold": 2780,
+        "n_stock": 5557,
+        "total_amount_yi": 19452.82098942028,
+        "up": 3293,
+        "down": 2146,
+        "flat": 118,
+        "breadth_base": 5557,
+        "market": {
+          "ts": "2026-10-08 15:00:00",
+          "state": "repair",
+          "score": 44.67,
+          "position_cap": 0.4,
+          "limit_up_cnt": 42,
+          "limit_down_cnt": 14,
+          "broken_rate": 0.475,
+          "up_ratio": 0.3134,
+          "state_label": "修复",
+          "cap_hint": 0.4,
+          "stale_days": true,
+          "note": "market_regime 最新只到 2026-10-08，非 2026-10-09"
+        },
+        "colors": {
+          "up": "#e0392e",
+          "down": "#1a9e5f",
+          "flat": "#8a8f99"
+        },
+        "ts_note": "as_of 归一到库内交易日，不使用墙钟（铁律二）"
+      }
+    },
+    "/api/news/tracked": {
+      "status": 200,
+      "data": {
+        "stocks": [
+          {
+            "code": "600152",
+            "name": "维科技术",
+            "industry": null,
+            "concept": null,
+            "held": 1,
+            "watched": 1
+          },
+          {
+            "code": "603232",
+            "name": "格尔软件",
+            "industry": null,
+            "concept": null,
+            "held": 1,
+            "watched": 1
+          },
+          {
+            "code": "603248",
+            "name": "锡华科技",
+            "industry": null,
+            "concept": null,
+            "held": 1,
+            "watched": 1
+          }
+        ],
+        "rows": [],
+        "pending": 0,
+        "total": 0,
+        "analysis": {
+          "processed": 0,
+          "state": "idle"
+        }
+      }
+    }
+  },
+  "sqlite": {
+    "hawk.sqlite": {
+      "tables": [
+        "stock",
+        "watchlist",
+        "sqlite_sequence",
+        "position",
+        "position_trade",
+        "raw_news",
+        "news",
+        "news_fts_data",
+        "news_fts_idx",
+        "news_fts_docsize",
+        "news_fts_config",
+        "signal",
+        "stock_signal_stats",
+        "mail_log",
+        "event_log",
+        "corpus",
+        "rule_library",
+        "trade_calendar",
+        "llm_audit",
+        "strategy_distillation",
+        "news_receipt",
+        "news_source_status",
+        "tracked_news_tag",
+        "news_fts",
+        "notification_outbox",
+        "notification_state"
+      ],
+      "watchlist": {
+        "count": 3,
+        "columns": [
+          "id",
+          "code",
+          "group_name",
+          "add_price",
+          "add_date",
+          "reason",
+          "tags",
+          "priority",
+          "last_mark",
+          "last_mark_at"
+        ]
+      },
+      "position": {
+        "count": 3,
+        "columns": [
+          "id",
+          "code",
+          "name",
+          "open_price",
+          "open_date",
+          "shares",
+          "cost",
+          "stop_loss",
+          "take_profit",
+          "strategy_id",
+          "status",
+          "note",
+          "updated_at"
+        ]
+      },
+      "trade_calendar": {
+        "count": 1207,
+        "columns": [
+          "trade_date",
+          "is_open",
+          "prev_date",
+          "note"
+        ]
+      },
+      "raw_news": {
+        "count": 8708,
+        "columns": [
+          "id",
+          "source",
+          "ts",
+          "payload",
+          "fetched_at",
+          "parsed"
+        ]
+      },
+      "tracked_news_tag": {
+        "count": 0,
+        "columns": [
+          "raw_id",
+          "code",
+          "relation",
+          "matched",
+          "priority",
+          "state",
+          "direction",
+          "strength",
+          "confidence",
+          "reason",
+          "evidence",
+          "model",
+          "attempts",
+          "updated_at",
+          "version"
+        ]
+      },
+      "notification_outbox": {
+        "count": 1,
+        "columns": [
+          "event_key",
+          "kind",
+          "payload",
+          "state",
+          "created_at",
+          "attempted_at",
+          "next_attempt",
+          "sent_at",
+          "attempts",
+          "error",
+          "message_id",
+          "expires_at"
+        ]
+      }
+    },
+    "opus-intraday.sqlite": {
+      "tables": [
+        "bars",
+        "feeds",
+        "signals",
+        "revisions",
+        "image_observations",
+        "image_runs",
+        "image_context",
+        "image_revisions"
+      ],
+      "bars": {
+        "count": 5784,
+        "columns": [
+          "code",
+          "period",
+          "ts",
+          "payload"
+        ]
+      },
+      "feeds": {
+        "count": 12,
+        "columns": [
+          "code",
+          "period",
+          "latest",
+          "fetched",
+          "error"
+        ]
+      },
+      "image_observations": {
+        "count": 734,
+        "columns": [
+          "code",
+          "period",
+          "policy",
+          "key",
+          "payload"
+        ]
+      }
+    }
+  },
+  "tracked_stocks": [
+    {
+      "code": "603248",
+      "name": "锡华科技",
+      "shares": null,
+      "cost": null,
+      "status": "holding"
+    },
+    {
+      "code": "600152",
+      "name": "维科技术",
+      "shares": null,
+      "cost": null,
+      "status": "holding"
+    },
+    {
+      "code": "603232",
+      "name": "格尔软件",
+      "shares": null,
+      "cost": null,
+      "status": "holding"
+    }
+  ],
+  "stock_columns": [
+    "id",
+    "name",
+    "market",
+    "industry",
+    "concept",
+    "list_date",
+    "is_st",
+    "total_mv",
+    "float_mv",
+    "status",
+    "is_suspend"
+  ],
+  "calendar": [
+    {
+      "trade_date": "2026-10-12",
+      "is_open": -1,
+      "prev_date": "2026-10-08",
+      "note": "future_unknown"
+    },
+    {
+      "trade_date": "2026-10-13",
+      "is_open": -1,
+      "prev_date": "2026-10-08",
+      "note": "future_unknown"
+    }
+  ],
+  "duckdb": {
+    "tables": [
+      "board_member_snapshot",
+      "board_strength",
+      "index_daily",
+      "index_member_snapshot",
+      "kline_daily",
+      "kline_min",
+      "market_regime",
+      "quote_snapshot",
+      "sync_watermark"
+    ],
+    "kline_daily": {
+      "rows": 1381238,
+      "columns": [
+        "code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "pre_close",
+        "volume",
+        "amount",
+        "turnover",
+        "pct_chg",
+        "adj_factor",
+        "is_suspend"
+      ],
+      "latest": "2026-10-09"
+    },
+    "market_regime": {
+      "rows": 251,
+      "columns": [
+        "ts",
+        "score",
+        "state",
+        "position_cap",
+        "limit_up_cnt",
+        "limit_down_cnt",
+        "broken_rate",
+        "max_streak",
+        "total_amount",
+        "up_ratio",
+        "detail_json"
+      ]
+    },
+    "board_strength": {
+      "rows": 383,
+      "columns": [
+        "ts",
+        "board_code",
+        "board_name",
+        "type",
+        "strength",
+        "rank",
+        "rank_change",
+        "limit_up_cnt",
+        "limit_down_cnt",
+        "max_streak",
+        "net_inflow",
+        "vol_ratio",
+        "up_ratio",
+        "leader_code",
+        "pct_chg",
+        "amount",
+        "factor_coverage",
+        "score_method",
+        "factors_json",
+        "raw_json",
+        "source",
+        "source_complete"
+      ]
+    },
+    "recent_daily_counts": [
+      {
+        "date": "2026-10-09",
+        "rows": 5557
+      },
+      {
+        "date": "2026-10-08",
+        "rows": 5556
+      },
+      {
+        "date": "2026-09-30",
+        "rows": 5560
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "policy": {
+    "version": "intraday-images-20261011-v1",
+    "hash": "18a723a38a89f4522dcf7aa347f691bc228df4fbc170c6cda7b9994a71c4ea71",
+    "enabled": true,
+    "validation": "unvalidated_no_performance_claim",
+    "backtest": {
+      "state": "no_improvement_demonstrated",
+      "variants": {
+        "baseline_chan": {
+          "accounts": 3,
+          "closed_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate_pct": null,
+          "net_return_pct": 3.2280094611133423,
+          "buy_hold_return_pct": 2.3793333333333333,
+          "excess_vs_hold_pp": 0.8486761277800009,
+          "worst_account_drawdown_pct": 10.72405131714674,
+          "unclosed_t_count": 3,
+          "fees": 42.17761666
+        },
+        "fused_full": {
+          "accounts": 3,
+          "closed_trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "win_rate_pct": null,
+          "net_return_pct": 2.4058412480533384,
+          "buy_hold_return_pct": 2.3793333333333333,
+          "excess_vs_hold_pp": 0.0265079147199964,
+          "worst_account_drawdown_pct": 9.820090441674271,
+          "unclosed_t_count": 3,
+          "fees": 40.86025584
+        },
+        "price_only_ablation": {
+          "accounts": 3,
+          "closed_trades": 23,
+          "wins": 7,
+          "losses": 16,
+          "win_rate_pct": 30.434782608695652,
+          "net_return_pct": 0.4792555783666626,
+          "buy_hold_return_pct": 2.3793333333333333,
+          "excess_vs_hold_pp": -1.900077754966672,
+          "worst_account_drawdown_pct": 14.711387710577759,
+          "unclosed_t_count": 3,
+          "fees": 464.8792649
+        }
+      },
+      "note": "三股10个完整交易日的5分钟历史回放：基线账户收益3.23%，完整约束融合版2.41%；量价实验版0.48%、23笔闭合T中7盈16亏。未证明提升。完整版缺少历史环境证据，闭合T为0，胜率不可估；账户收益含底仓和未闭合持仓。"
+    },
+    "note": "三图量价规则已融合；缺少当时大盘/板块证据时买点仅为候选。打板与KDJ/MA含糊语料未启用。做T最多按隔夜底仓1/3观察；未知可卖股数不提供交易股数。"
+  },
+  "observations": 139,
+  "rendererErrors": [],
+  "allSixViews": true,
+  "unknownEnvironmentNeverConfirmsBuy": true,
+  "intradayRunning": true,
+  "mailRunning": true,
+  "newsRunning": true
+}

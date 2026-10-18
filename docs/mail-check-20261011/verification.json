@@ -1,0 +1,12 @@
+{
+  "mail_rows": 42,
+  "duplicate_groups": [
+    {
+      "kind": "midday",
+      "day": "2026-10-09",
+      "body_hash": "1661b",
+      "n": 35
+    }
+  ],
+  "last_heartbeat": "2026-10-11T03:16:46+08:00"
+}

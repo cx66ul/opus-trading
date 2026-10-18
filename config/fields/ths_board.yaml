@@ -1,0 +1,65 @@
+# Hawk · 字段映射：同花顺板块（东财 push2 不可达的替代源）
+# 依据：2026-10-08 实测 http://q.10jqka.com.cn/thshy/ 与 /gn/
+# verified_at: 2026-10-08T21:24:52+08:00
+
+source: ths_board
+response_type: html_embedded_table
+verified_at: "2026-10-09T14:37:30+08:00"
+encoding: gbk
+purpose: >
+  东财 push2.eastmoney.com 在本机不可达，板块列表/成分股/资金流原本依赖东财 clist。
+  同花顺提供板块列表，填补 M5 板块强度的行业+概念分类需求。
+
+endpoints:
+  industry: http://q.10jqka.com.cn/thshy/       # 行业板块，实测 90 个
+  concept:  http://q.10jqka.com.cn/gn/          # 概念板块，实测 361 个
+
+# 页面链接实测样例：
+#   行业：http://q.10jqka.com.cn/thshy/detail/code/881121/  → 半导体
+#   概念：http://q.10jqka.com.cn/gn/detail/code/308614/     → 阿尔茨海默概念
+link_pattern: 'q\.10jqka\.com\.cn/(?:thshy|gn)/detail/code/(\d+)/'
+
+fields:
+  pct_chg: "行业表第 3 列；概念 gnSection 的 199112；单位 %"
+  amount_yi: "行业表第 5 列；单位亿元；概念缺失"
+  net_inflow_yi: "行业表第 6 列；概念 gnSection 的 zjjlr；单位亿元"
+  up_cnt: "行业表第 7 列；概念 gnSection 的 zfl"
+  down_cnt: "行业表第 8 列；概念 gnSection 的 zdl 通常缺失"
+  up_ratio: "up_cnt / (up_cnt + down_cnt)，任一缺失则 NULL；不含持平股的代理广度"
+  leader_code: "行业表第 10 列 stockpage 链接中的股票代码；概念缺失"
+  collection_complete: "行业分页错误时为 false；用于降级标记，不代表所有因子完整"
+  code: >
+    板块代码（6 位）。行业板块为 881xxx，概念板块为 3xxxxx。
+    ★ 两套编码空间不同，不能混用。
+  name: 板块名称（中文）
+  board_code: >
+    系统内唯一键，构造为 THS + 类型前缀 + code
+    （行业 THSIND881121 / 概念 THSCON308614）。
+    原因：行业与概念板块 code 可能撞号，需类型前缀隔离。
+  type: "industry | concept"
+
+unavailable_capabilities:
+  board_members: >
+    ✗ /thshy/detail/field/.../ajax/1/code/<code> 返回 JS 跳转页（非 JSON），
+    需真实浏览器执行 JS。按附录 A 属Playwright 场景，
+    待 M2 Playwright 环境就绪后实现 scripts/scrape_board.py。
+    当前降级方案：板块成分归属用东财涨停池的 hybk 字段（可用），
+    或暂不启用成分快照（board_member_snapshot 表留空）。
+  board_money_flow: >
+    原始净流入已可读取；板块流通市值分母仍缺失。
+    d5=净流入/流通市值，不能把净流入原值冒充 d5。
+    当前只计可用因子，保存 factor_coverage 和 partial_factor_v1。
+
+limits:
+  qps: 2
+  concurrency: 1
+  referer: "http://q.10jqka.com.cn/"
+  note: 同花顺对高频访问敏感，务必低频 + 随机间隔
+
+notes:
+  - "2026-10-09 行情采集：行业 90 / 概念 gnSection 293；概念新闻目录与行情集合不同"
+  - "板块列表是静态 HTML，无需 JS 渲染，httpx 直接抓即可"
+  - "页面为 GBK 编码"
+  - "行业 90 / 概念 361，实测 2026-10-08"
+  - "board_code 必须加类型前缀：行业与概念 code 空间不同"
+  - "该源可用于 M6 推荐的『题材+行业』交叉验证（规则 T3/T4）"

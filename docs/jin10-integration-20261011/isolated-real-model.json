@@ -1,0 +1,47 @@
+{
+  "note": "隔离数据库验证，未改变真实自选或持仓",
+  "stat": {
+    "processed": 1,
+    "state": "ok"
+  },
+  "result": {
+    "stocks": [
+      {
+        "code": "600693",
+        "name": "东百集团",
+        "industry": null,
+        "concept": null,
+        "held": 0,
+        "watched": 1
+      }
+    ],
+    "rows": [
+      {
+        "raw_id": 1,
+        "code": "600693",
+        "relation": "direct",
+        "matched": "东百集团",
+        "priority": 20,
+        "state": "done",
+        "direction": "bear",
+        "strength": 3,
+        "confidence": 0.8,
+        "reason": "上交所下发监管工作函，涉及收购资产事项，可能引发市场对收购事项的质疑，对股价产生负面影响。",
+        "evidence": "上交所向东百集团下发关于福建东百集团股份有限公司收购资产事项的监管工作函。",
+        "model": "hawk-qwen2.5-7b",
+        "attempts": 1,
+        "updated_at": "2026-10-11T19:32:11.405330+08:00",
+        "version": "tracked-news-v1",
+        "ts": "2026-10-11T18:29:42+08:00",
+        "source": "jin10",
+        "name": "东百集团",
+        "held": 0,
+        "title": null,
+        "content": "【上交所向东百集团下发监管工作函】金十数据10月11日讯，上交所向东百集团下发关于福建东百集团股份有限公司收购资产事项的监管工作函。该函涉及对象为上市公司、董事、高级管理人员、控股股东及实际控制人，处理事由为关于福建东百集团股份有限公司收购资产事项的监管工作函。",
+        "url": null
+      }
+    ],
+    "pending": 0,
+    "total": 1
+  }
+}

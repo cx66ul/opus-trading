@@ -1,0 +1,15 @@
+{
+  "ready": {
+    "service": "hawk-webapi",
+    "ready": true,
+    "root": "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk"
+  },
+  "trade_date": "2026-10-09",
+  "weight": 0.6,
+  "eligible_rows": 5311,
+  "rows": 20,
+  "rule_count": 11,
+  "stock_record_count": 29,
+  "watchlist_rows": 3,
+  "watchlist_has_score": false
+}

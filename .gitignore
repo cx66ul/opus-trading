@@ -1,0 +1,152 @@
+# ══════════════════════════════════════════════════════════
+# Opus 辅助交易 · .gitignore
+# ══════════════════════════════════════════════════════════
+# ★★ 第一职责是**防止密钥泄漏**（不可逆），第二是排除大体积生成物。
+#   任何「不确定该不该提交」的文件，一律排除。
+# ══════════════════════════════════════════════════════════
+
+# ─────────────────────────────────────── 密钥（绝对不能提交）
+# ★ data/secrets.vault.json 内含 DPAPI 加密的 SMTP 授权码。
+#   即使是密文也不该进版本库 —— 仓库一旦公开即不可撤回。
+data/secrets.vault.json
+data/.lj_token.json
+data/secrets.json
+data/*.secret
+data/**/.lj_*
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+config.local.json
+
+# ★ 两江算力平台的 config.json 内含**明文账号密码**
+#   （在另一工作区；万一被复制进来也要被挡住）
+liangjiang_config.json
+**/config.json.bak*
+
+# ─────────────────────────────────────── 数据（949MB，且含个人信息）
+# ★ hawk.duckdb = 138 万行行情；kline_min 更大。
+#   即使想开源也不该提交二进制数据库。
+#★★ 必须用 `data/**/xxx`（递归）而不是 `data/xxx`（只一层）。
+#   实测踩坑（2026-10-18）：`data/*.sqlite` 没拦住
+#   `data/backups/jin10-20261011/before/hawk.sqlite`，
+#   ⇒ 453MB 备份库被纳入暂存区。
+data/*.duckdb
+data/*.duckdb.wal
+data/**/hawk.duckdb
+data/**/hawk.duckdb.wal
+data/*.sqlite
+data/*.sqlite3
+data/**/hawk.sqlite
+data/**/hawk.sqlite3
+data/**/*.db
+data/**/*.parquet
+data/kline_min*/
+data/**/kline_min/
+data/raw/
+data/cache/
+data/backups/
+data/**/labels-*.jsonl
+data/**/*.jsonl
+data/**/*.json.gz
+
+# ─────────────────────────────────────── 审计/修复过程产物
+scripts/probe/
+scripts/_scratch/
+tools/
+_covers/
+htmlcov/
+coverage.xml
+
+# ─────────────────────────────────────── Python 运行环境
+.venv/
+venv/
+env/
+runtime/
+runtime-standalone/
+models/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ─────────────────────────────────────── Node / Electron
+node_modules/
+desktop/node_modules/
+desktop/dist/
+desktop/.electron-builder/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+
+# ─────────────────────────────────────── 构建与打包产物
+build/
+dist/
+release/
+*.exe
+*.zip
+*.7z
+*.spec
+
+# ─────────────────────────────────────── 日志与临时
+logs/
+*.log
+*.tmp
+*.bak
+*.bak-*
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+
+# ══════════════════════════════════════════════════════════
+# data/ 下的**白名单**（放在文件末尾，靠后生效）
+# ══════════════════════════════════════════════════════════
+#★★★ 关键机制：`!data/*.md` 这类否定规则**无法穿透被排除的父目录**。
+#   实测（2026-10-18）：Git 一旦排除某个目录，就不再进入它，
+#   于是 `!data/*.md` 完全失效 ⇒
+#   要么整个 data/ 进仓库（含 949MB 数据库），
+#   要么连口径确认表这类**核心文档**也一起丢掉。
+#
+# ⇒ 正确做法：**排除目录 + 逐个 `!` 反排除子路径**，
+#   让 Git「看到」那条路径，才有机会忽略它：
+#       data/creator_corpus/**      ← 先把目录摊平（不排除目录本身）
+#       !data/creator_corpus/       ← 立刻把目录本身排除掉
+#       !data/scope_answer_sheet.md
+#   顺序很重要：先摊平、后排除、最后才放行要保留的文件。
+
+# ── 先排除 data/ 下所有「子路径」而非目录本身
+data/**
+# ── 再放行 data/ 本身（否则上条把 data/ 也排了）
+!data/
+# ── 明确排除所有内容
+data/*
+# ── 放行要保留的文档（此时路径已被 Git 看见，例外才有效）
+!data/scope_answer_sheet.md
+!data/scope_gaps.md
+!data/*.md
+
+# ══════════════════════════════════════════════════════════
+# docs/ 下的过程产物（实测：29MB 里的大头）
+# ══════════════════════════════════════════════════════════
+# ★ docs/ 里存的是**运行报告与证据截图**，不是文档。
+#   其中 .sqlite 是蒸馏过程的中间库、.png/.jpg 是截图证据、
+#   results.json 是回测明细（12MB）。
+#   ⇒ 保留 docs/ 下的 .md（结论），排除二进制与大体量明细。
+docs/**/*.sqlite
+docs/**/*.sqlite3
+docs/**/*.jpg
+docs/**/*.jpeg
+docs/**/*.png
+docs/**/*.webp
+docs/**/backtest-v*/results.json
+docs/**/*.jsonl
+
+# ★ 例外：`scripts/audit_creator_corpus.py` 是**源码**，
+#   它因为名字里含 creator_corpus 容易被误判为素材而误删。
+#   （本次审计中它就是被关键词扫出来的 —— 说明关键词审计有盲区，
+#     扫出来的结果必须逐个人工确认，不能直接批量删。）

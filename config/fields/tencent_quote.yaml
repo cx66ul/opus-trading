@@ -1,0 +1,64 @@
+# Hawk · 字段映射：腾讯实时行情（跟踪池 3s 轨道主源）
+# 依据：samples/tencent_quote.txt（2026-10-08 实测，一次请求取 5 只）
+# 关键事实：编码 GBK，分隔符 ~，字段为「位置索引」而非键名 -> 必须按下标映射
+# verified_at: 2026-10-08T20:05:09+08:00
+
+source: tencent_quote
+endpoint: https://qt.gtimg.cn/q=<逗号分隔代码列表>
+response_type: gbk_text_kv
+verified_at: "2026-10-08T20:05:09+08:00"
+sample_file: samples/tencent_quote.txt
+
+#原始样本首条（sh600519贵州茅台）实测：
+#   v_sh600519="1~贵州茅台~600519~1255.79~1258.62~1252.90~25168~12953~..."
+# 因此下标从 0 开始计。
+index_fields:
+  1:  name            # 名称
+  2:  code            # 6 位代码
+  3:  price           # 现价
+  4:  pre_close       # 昨收
+  5:  open            # 今开
+  6:  volume          # 成交量（手）
+  7:  outer_vol# 外盘（手）
+  8:  inner_vol       # 内盘（手）
+  30: ts              # 时间戳 YYYYMMDDHHMMSS（实测 20261008161457）
+  31: change          # 涨跌额
+  32: pct_chg         # 涨跌幅 %
+  33: high
+  34: low
+  36: volume_lot      # 成交量（手，与 6 同值，实测 25168）
+  37: amount_wan# 成交额（万元，实测 314541）
+  38: turnover        # 换手率 %
+  39: pe_ttm          # 市盈率TTM
+  43: high_amplitude  # 振幅 %
+  44: float_mv_yi     # 流通市值（亿元，实测 15698.40）
+  45: total_mv_yi      # 总市值（亿元，实测 15698.40）
+  46: pb              # 市净率
+
+unit_scale:
+  amount_wan: 10000.0   # 万元 -> 元
+  volume: 100.0         # 手 -> 股
+  volume_lot: 100.0
+  float_mv_yi: 100000000.0   # 亿 -> 元
+  total_mv_yi: 100000000.0
+
+# 五档买卖盘：下标 9~18 为买一~买五，19~28 为卖一~卖五
+# 每档两个连续值：价格、手数
+depth:
+  buy_start: 9
+  sell_start: 19
+  levels: 5
+  step: 2
+
+derived:
+  is_st: {from: name, keywords: ["ST", "*ST", "退", "PT"]}
+  # 涨红跌绿配色由上层 UI 负责，数据层不携带颜色语义
+
+batch:
+  # 实测一次请求多只可行；建议单批 50~60 只（跟踪池规模）
+  max_codes_per_request: 60
+
+notes:
+  - "响应为 GBK 编码，必须 decode('gbk')"
+  - "字段为位置索引，接口若调整顺序会静默错位 -> 因此健康度监控需含'字段合理性校验'（如 price>0、pct_chg 量级）"
+  - "ts 为北京时间字符串，解析需按 as_of 注入，禁止直接取系统时间（铁律二）"

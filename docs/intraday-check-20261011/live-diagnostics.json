@@ -1,0 +1,396 @@
+{
+  "stocks": [
+    {
+      "code": "600152",
+      "name": "维科技术",
+      "http": 200,
+      "day": "2026-10-09",
+      "bars": 250,
+      "last_bar": [
+        {
+          "d": "2026-10-09",
+          "o": 8.85,
+          "h": 8.96,
+          "l": 8.36,
+          "c": 8.73,
+          "v": 95052500.0,
+          "pct": -0.04902
+        }
+      ],
+      "signals": [
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 8.65,
+          "date": "2026-01-13",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "3buy",
+          "level": "strong",
+          "price": 7.34,
+          "date": "2026-01-21",
+          "reason": "回抽低点 7.34 未破中枢上沿 7.17（三买成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 10.24,
+          "date": "2026-03-05",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "3buy",
+          "level": "strong",
+          "price": 10.13,
+          "date": "2026-06-12",
+          "reason": "回抽低点 10.13 未破中枢上沿 8.65（三买成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "1buy",
+          "level": "strong",
+          "price": 6.38,
+          "date": "2026-07-21",
+          "reason": "下跌段底背驰（MACD 面积比 0.313）",
+          "confidence": 0.825
+        },
+        {
+          "kind": "3sell",
+          "level": "strong",
+          "price": 8.41,
+          "date": "2026-08-13",
+          "reason": "反抽高点 8.41 未上破中枢下沿 8.63（三卖成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "2buy",
+          "level": "normal",
+          "price": 7.66,
+          "date": "2026-08-21",
+          "reason": "一买后回抽低点 7.66 高于一买低点 6.38",
+          "confidence": 0.65
+        },
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 8.51,
+          "date": "2026-09-01",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "3sell",
+          "level": "strong",
+          "price": 8.51,
+          "date": "2026-09-01",
+          "reason": "反抽高点 8.51 未上破中枢下沿 10.13（三卖成立）",
+          "confidence": 0.8
+        }
+      ],
+      "minutes": [
+        [
+          "m30",
+          482,
+          "2026-07-08 14:30:00",
+          "2026-10-08 15:00:00"
+        ],
+        [
+          "m60",
+          482,
+          "2026-04-09 14:00:00",
+          "2026-10-08 15:00:00"
+        ]
+      ]
+    },
+    {
+      "code": "603232",
+      "name": "格尔软件",
+      "http": 200,
+      "day": "2026-10-09",
+      "bars": 250,
+      "last_bar": [
+        {
+          "d": "2026-10-09",
+          "o": 15.39,
+          "h": 16.98,
+          "l": 14.57,
+          "c": 16.98,
+          "v": 25051500.0,
+          "pct": 0.099741
+        }
+      ],
+      "signals": [
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 28.0,
+          "date": "2026-01-14",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "1buy",
+          "level": "strong",
+          "price": 20.88,
+          "date": "2026-01-27",
+          "reason": "下跌段底背驰（MACD 面积比 0.111）",
+          "confidence": 0.906
+        },
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 28.4,
+          "date": "2026-02-10",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 22.0,
+          "date": "2026-04-16",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "2sell",
+          "level": "normal",
+          "price": 22.0,
+          "date": "2026-04-16",
+          "reason": "一卖后回落高点 22.00 低于一卖高点 28.40",
+          "confidence": 0.65
+        },
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 20.34,
+          "date": "2026-05-11",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "2sell",
+          "level": "normal",
+          "price": 20.34,
+          "date": "2026-05-11",
+          "reason": "一卖后回落高点 20.34 低于一卖高点 22.00",
+          "confidence": 0.65
+        },
+        {
+          "kind": "3sell",
+          "level": "strong",
+          "price": 20.34,
+          "date": "2026-05-11",
+          "reason": "反抽高点 20.34 未上破中枢下沿 20.88（三卖成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "3sell",
+          "level": "strong",
+          "price": 17.7,
+          "date": "2026-06-24",
+          "reason": "反抽高点 17.70 未上破中枢下沿 18.90（三卖成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "1buy",
+          "level": "strong",
+          "price": 12.4,
+          "date": "2026-07-21",
+          "reason": "下跌段底背驰（MACD 面积比 0.75）",
+          "confidence": 0.65
+        },
+        {
+          "kind": "3sell",
+          "level": "strong",
+          "price": 18.0,
+          "date": "2026-08-12",
+          "reason": "反抽高点 18.00 未上破中枢下沿 18.21（三卖成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "2buy",
+          "level": "normal",
+          "price": 14.33,
+          "date": "2026-08-21",
+          "reason": "一买后回抽低点 14.33 高于一买低点 12.40",
+          "confidence": 0.65
+        }
+      ],
+      "minutes": [
+        [
+          "m30",
+          482,
+          "2026-07-08 14:30:00",
+          "2026-10-08 15:00:00"
+        ],
+        [
+          "m60",
+          482,
+          "2026-04-09 14:00:00",
+          "2026-10-08 15:00:00"
+        ]
+      ]
+    },
+    {
+      "code": "603248",
+      "name": "锡华科技",
+      "http": 200,
+      "day": "2026-10-09",
+      "bars": 190,
+      "last_bar": [
+        {
+          "d": "2026-10-09",
+          "o": 21.4,
+          "h": 21.4,
+          "l": 19.39,
+          "c": 20.64,
+          "v": 18030000.0,
+          "pct": -0.037313
+        }
+      ],
+      "signals": [
+        {
+          "kind": "3sell",
+          "level": "strong",
+          "price": 22.14,
+          "date": "2026-07-06",
+          "reason": "反抽高点 22.14 未上破中枢下沿 22.15（三卖成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "3sell",
+          "level": "strong",
+          "price": 22.14,
+          "date": "2026-07-06",
+          "reason": "反抽高点 22.14 未上破中枢下沿 25.55（三卖成立）",
+          "confidence": 0.8
+        },
+        {
+          "kind": "1buy",
+          "level": "strong",
+          "price": 16.43,
+          "date": "2026-07-22",
+          "reason": "下跌段底背驰（MACD 面积比 0.102）",
+          "confidence": 0.909
+        },
+        {
+          "kind": "2buy",
+          "level": "normal",
+          "price": 16.6,
+          "date": "2026-09-14",
+          "reason": "一买后回抽低点 16.60 高于一买低点 16.43",
+          "confidence": 0.65
+        },
+        {
+          "kind": "1sell",
+          "level": "strong",
+          "price": 26.49,
+          "date": "2026-09-21",
+          "reason": "上涨段顶背驰",
+          "confidence": 0.7
+        },
+        {
+          "kind": "3buy",
+          "level": "weak",
+          "price": 24.25,
+          "date": "2026-09-21",
+          "reason": "已向上离开中枢上沿 22.14，尚未回抽确认（观察价=信号日收盘 24.25，非最高价）",
+          "confidence": 0.4
+        }
+      ],
+      "minutes": [
+        [
+          "m30",
+          482,
+          "2026-07-09 14:30:00",
+          "2026-10-09 15:00:00"
+        ]
+      ]
+    }
+  ],
+  "minute_periods": [
+    [
+      "m1",
+      1446,
+      3,
+      "2026-10-08 15:00:00"
+    ],
+    [
+      "m30",
+      2503654,
+      5208,
+      "2026-10-09 15:00:00"
+    ],
+    [
+      "m5",
+      1446,
+      3,
+      "2026-10-08 15:00:00"
+    ],
+    [
+      "m60",
+      2190264,
+      4558,
+      "2026-10-09 11:30:00"
+    ]
+  ],
+  "quote_schema": [
+    [
+      "ts"
+    ],
+    [
+      "code"
+    ],
+    [
+      "price"
+    ],
+    [
+      "pre_close"
+    ],
+    [
+      "open"
+    ],
+    [
+      "high"
+    ],
+    [
+      "low"
+    ],
+    [
+      "volume"
+    ],
+    [
+      "amount"
+    ],
+    [
+      "pct_chg"
+    ],
+    [
+      "turnover"
+    ],
+    [
+      "float_mv"
+    ],
+    [
+      "total_mv"
+    ],
+    [
+      "source"
+    ],
+    [
+      "source_ts"
+    ],
+    [
+      "captured_at"
+    ]
+  ],
+  "chart_paths": [
+    "/api/stock/{code}"
+  ],
+  "quote_coverage": []
+}

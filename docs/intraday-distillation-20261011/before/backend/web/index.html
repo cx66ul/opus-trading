@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Opus 辅助交易 · 决策副驾</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header>
+  <h1>OPUS</h1>
+  <span class="role">决策副驾 · 只读视图 · 不接券商下单接口</span>
+  <span class="spacer"></span>
+  <span class="role" id="hdr-day">加载中…</span>
+  <span class="tag" id="hdr-usable" style="display:none"></span>
+</header>
+
+<nav>
+  <button data-p="overview" class="on">概览</button>
+  <button data-p="watch">自选股</button>
+  <button data-p="recommend">每日推荐</button>
+  <button data-p="stock">个股详情</button>
+  <button data-p="boards">板块强度</button>
+  <button data-p="health">系统状态</button>
+</nav>
+
+<main>
+  <!-- ══════════ 概览 ══════════ -->
+  <section class="page on" id="p-overview">
+    <div id="ov-err"></div>
+    <div class="grid g4" id="ov-kpi"></div>
+    <div class="card" id="ov-mkt"></div>
+    <div class="card">
+      <h2>说明 <small>口径纪律</small></h2>
+      <div class="note" id="ov-notes"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ 自选股 ══════════ -->
+  <section class="page" id="p-watch">
+    <div class="card">
+      <h2>添加自选 <small>as_of 必填：时间注入不可省（铁律二）</small></h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <input id="w-q" placeholder="代码或名称，如 600519 / 茅台" size="22">
+        <input id="w-group" placeholder="分组" size="10" value="核心池">
+        <input id="w-reason" placeholder="理由" size="18" value="手动添加">
+        <button class="act" id="w-add">搜索并加入</button>
+      </div>
+      <div id="w-search" class="note"></div>
+    </div>
+    <div class="card">
+      <h2>我的自选 <small id="w-day"></small></h2>
+      <div id="w-body"></div>
+    </div>
+    <div class="card"><h2>自选与持仓关联新闻 <small>最近 7 天 · 实时资讯</small></h2>
+      <div id="w-news"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ 每日推荐 ══════════ -->
+  <section class="page" id="p-recommend">
+    <div id="rc-err"></div>
+    <div class="card">
+      <h2>今日推荐 <small>与邮件/命令行同一套口径</small></h2>
+      <div id="rc-body"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ 个股详情 ══════════ -->
+  <section class="page" id="p-stock">
+    <div class="card">
+      <h2>查询</h2>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <input id="s-q" placeholder="股票代码，如 600519" size="14" value="600519">
+        <button class="act" id="s-go">查询</button>
+        <button class="act" id="s-add">加入自选</button>
+        <label>周期 <select id="s-period" aria-label="图表周期">
+          <option value="line">分时</option><option value="m1">1 分钟</option>
+          <option value="m5">5 分钟</option><option value="m30">30 分钟</option>
+          <option value="m60">60 分钟</option><option value="daily" selected>日线</option>
+        </select></label>
+        <span class="role" id="s-hint"></span>
+      </div>
+      <div id="s-search" class="note"></div>
+    </div>
+    <div id="s-err"></div>
+    <div id="s-body"></div>
+  </section>
+
+  <!-- ══════════ 板块强度 ══════════ -->
+  <section class="page" id="p-boards">
+    <div class="card">
+      <h2>板块强度榜 <small>八因子加权</small></h2>
+      <div id="bd-body"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ 系统状态 ══════════ -->
+  <section class="page" id="p-health">
+    <div class="card"><h2>LLM 连通性自检</h2><div id="h-llm"></div></div>
+    <div class="card"><h2>LLM 用量与成本（近 30 天）</h2><div id="h-cost"></div></div>
+    <div class="card"><h2>调度任务</h2><div id="h-task"></div></div>
+    <div class="card"><h2>邮件通知</h2><div id="h-mail"></div></div>
+    <div class="card"><h2>新闻数据源</h2><div id="h-news"></div></div>
+    <div class="card"><h2>数据健康度</h2><div id="h-data"></div></div>
+    <div class="card"><h2>两江算力平台</h2><div id="h-platform"></div></div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+{
+  "configuration": {
+    "smtp.host": {
+      "configured": true
+    },
+    "smtp.port": {
+      "configured": true
+    },
+    "smtp.user": {
+      "configured": true
+    },
+    "smtp.auth_code": {
+      "configured": true
+    },
+    "smtp.sender": {
+      "configured": true
+    },
+    "mail.to": {
+      "configured": false
+    }
+  },
+  "smtp": {
+    "host": "smtp.qq.com",
+    "port": 465,
+    "ssl": true,
+    "recipients": 1,
+    "sender_matches_login": true,
+    "auth_status": 235,
+    "noop_status": 250
+  },
+  "mail_totals": [
+    {
+      "kind": "midday",
+      "status": "sent",
+      "n": 41,
+      "latest": "2026-10-09T11:35:00+08:00"
+    },
+    {
+      "kind": "weekly",
+      "status": "sent",
+      "n": 1,
+      "latest": "2026-10-10T10:00:00+08:00"
+    }
+  ],
+  "mail_recent": [
+    {
+      "id": 42,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 41,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 40,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 39,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 38,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 37,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 36,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 35,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 34,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 33,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 32,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    },
+    {
+      "id": 31,
+      "ts": "2026-10-09T11:35:00+08:00",
+      "kind": "midday",
+      "status": "sent",
+      "err": null,
+      "retry": 0
+    }
+  ],
+  "event_recent": [
+    {
+      "ts": "2026-10-08T23:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"night_archive\", \"ok\": true, \"skipped\": false, \"elapsed_ms\": 398, \"attempt\": 1, \"error\": \"\", \"detail\": {\"raw_news\": 8425, \"news\": 133, \"signal\": 1564, \"event_log\": 6412}}"
+    },
+    {
+      "ts": "2026-10-08T10:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"t_fail\", \"ok\": false, \"skipped\": false, \"elapsed_ms\": 0, \"attempt\": 3, \"error\": \"RuntimeError: 必败\", \"detail\": {}}"
+    },
+    {
+      "ts": "2026-10-08T10:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"t_flaky\", \"ok\": true, \"skipped\": false, \"elapsed_ms\": 0, \"attempt\": 2, \"error\": \"\", \"detail\": {\"ok_after\": 2}}"
+    },
+    {
+      "ts": "2026-10-08T10:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"t_timeout\", \"ok\": false, \"skipped\": false, \"elapsed_ms\": 0, \"attempt\": 3, \"error\": \"任务 t_timeout 超时 1s，已熔断（后台线程仍存活但调度器不再等待）\", \"detail\": {}}"
+    },
+    {
+      "ts": "2026-10-10T08:30:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"night_archive\", \"ok\": true, \"skipped\": false, \"elapsed_ms\": 664, \"attempt\": 1, \"error\": \"\", \"detail\": {\"raw_news\": 8425, \"news\": 133, \"signal\": 1564, \"event_log\": 6407}}"
+    },
+    {
+      "ts": "2026-10-08T23:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"night_archive\", \"ok\": true, \"skipped\": false, \"elapsed_ms\": 368, \"attempt\": 1, \"error\": \"\", \"detail\": {\"raw_news\": 8359, \"news\": 133, \"signal\": 1564, \"event_log\": 6405}}"
+    },
+    {
+      "ts": "2026-10-08T10:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"t_fail\", \"ok\": false, \"skipped\": false, \"elapsed_ms\": 0, \"attempt\": 3, \"error\": \"RuntimeError: 必败\", \"detail\": {}}"
+    },
+    {
+      "ts": "2026-10-08T10:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"t_flaky\", \"ok\": true, \"skipped\": false, \"elapsed_ms\": 0, \"attempt\": 2, \"error\": \"\", \"detail\": {\"ok_after\": 2}}"
+    },
+    {
+      "ts": "2026-10-08T10:00:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"t_timeout\", \"ok\": false, \"skipped\": false, \"elapsed_ms\": 0, \"attempt\": 3, \"error\": \"任务 t_timeout 超时 1s，已熔断（后台线程仍存活但调度器不再等待）\", \"detail\": {}}"
+    },
+    {
+      "ts": "2026-10-10T08:30:00+08:00",
+      "kind": "job_run",
+      "payload": "{\"job\": \"night_archive\", \"ok\": true, \"skipped\": false, \"elapsed_ms\": 782, \"attempt\": 1, \"error\": \"\", \"detail\": {\"raw_news\": 8359, \"news\": 133, \"signal\": 1564, \"event_log\": 6400}}"
+    }
+  ],
+  "event_kinds": [
+    {
+      "kind": "watch_upsert",
+      "n": 1022,
+      "latest": "2099-01-01T15:00:00+08:00"
+    },
+    {
+      "kind": "run_state",
+      "n": 618,
+      "latest": "2026-10-11T03:16:46+08:00"
+    },
+    {
+      "kind": "job_run",
+      "n": 1386,
+      "latest": "2026-10-11T03:16:13+08:00"
+    },
+    {
+      "kind": "review_run",
+      "n": 4,
+      "latest": "2026-10-10T23:15:55+08:00"
+    },
+    {
+      "kind": "ref_sync",
+      "n": 2,
+      "latest": "2026-10-10T20:00:00+08:00"
+    },
+    {
+      "kind": "weekly",
+      "n": 1,
+      "latest": "2026-10-10T10:00:00+08:00"
+    },
+    {
+      "kind": "night_archive",
+      "n": 314,
+      "latest": "2026-10-10T08:30:00+08:00"
+    },
+    {
+      "kind": "quote_capture",
+      "n": 1,
+      "latest": "2026-10-09T14:39:07+08:00"
+    },
+    {
+      "kind": "signals_saved",
+      "n": 6,
+      "latest": "2026-10-09T12:21:50+08:00"
+    },
+    {
+      "kind": "min_sync",
+      "n": 4,
+      "latest": "2026-10-09T12:09:53+08:00"
+    },
+    {
+      "kind": "midday",
+      "n": 157,
+      "latest": "2026-10-09T11:35:00+08:00"
+    },
+    {
+      "kind": "signal_human_label",
+      "n": 151,
+      "latest": "2026-10-09T03:53:33+08:00"
+    },
+    {
+      "kind": "spotcheck",
+      "n": 1,
+      "latest": "2026-10-09T03:53:24+08:00"
+    },
+    {
+      "kind": "calendar_build",
+      "n": 4,
+      "latest": "2026-10-08T23:51:40+08:00"
+    },
+    {
+      "kind": "watch_mark",
+      "n": 145,
+      "latest": "2026-10-08T23:40:00+08:00"
+    }
+  ]
+}

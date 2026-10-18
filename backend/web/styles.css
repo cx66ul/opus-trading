@@ -1,0 +1,126 @@
+:root {
+  --bg: #12151b;
+  --panel: #1a1f28;
+  --panel2: #212836;
+  --border: #2c3444;
+  --text: #e6e9ef;
+  --muted: #8a93a3;
+  /* ★ 涨红跌绿（A股习惯，全局不得反转） */
+  --up: #e0392e;
+  --down: #1a9e5f;
+  --flat: #8a8f99;
+  --accent: #4a90d9;
+  --warn: #d99a2b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.6 "Microsoft YaHei", -apple-system, "Segoe UI", sans-serif;
+}
+
+header {
+  display: flex; align-items: center; gap: 16px;
+  padding: 10px 18px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 20;
+}
+header h1 { font-size: 17px; margin: 0; letter-spacing: 1px; }
+header .role { color: var(--muted); font-size: 12px; }
+header .spacer { flex: 1; }
+
+nav { display: flex; gap: 4px; padding: 8px 18px 0; background: var(--panel); }
+nav button {
+  background: transparent; border: 1px solid transparent; border-bottom: none;
+  color: var(--muted); padding: 8px 16px; cursor: pointer; font-size: 14px;
+  border-radius: 6px 6px 0 0;
+}
+nav button.on { background: var(--bg); color: var(--text); border-color: var(--border); }
+nav button:hover { color: var(--text); }
+
+main { padding: 14px 18px 40px; }
+section.page { display: none; }
+section.page.on { display: block; }
+
+.card {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px 16px; margin-bottom: 14px;
+}
+.card h2 { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+.card h2 small { color: var(--muted); font-weight: 400; margin-left: 8px; font-size: 12px; }
+
+.grid { display: grid; gap: 12px; }
+.g4 { grid-template-columns: repeat(4, 1fr); }
+.g3 { grid-template-columns: repeat(3, 1fr); }
+.g2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .g4, .g3, .g2 { grid-template-columns: repeat(2, 1fr); } }
+
+.kpi { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.kpi .lb { color: var(--muted); font-size: 12px; }
+.kpi .vl { font-size: 22px; font-weight: 700; margin-top: 4px; }
+.kpi .ex { color: var(--muted); font-size: 11px; margin-top: 4px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 7px 8px; text-align: right; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 500; font-size: 12px; text-align: right; }
+th:first-child, td:first-child, td.l, th.l { text-align: left; }
+tbody tr:hover { background: var(--panel2); cursor: pointer; }
+td.num { font-variant-numeric: tabular-nums; }
+
+.up { color: var(--up); }
+.down { color: var(--down); }
+.flat { color: var(--flat); }
+
+.bar { height: 6px; background: var(--panel2); border-radius: 3px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--accent); }
+
+.tag { display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 11px;
+       border: 1px solid var(--border); color: var(--muted); }
+.tag.warn { color: var(--warn); border-color: var(--warn); }
+.tag.ok { color: var(--down); border-color: var(--down); }
+
+input, select, button.act {
+  background: var(--panel2); color: var(--text);
+  border: 1px solid var(--border); border-radius: 6px;
+  padding: 6px 10px; font-size: 13px; font-family: inherit;
+}
+button.act { cursor: pointer; }
+button.act:hover { border-color: var(--accent); }
+
+.note { color: var(--muted); font-size: 12px; margin-top: 8px; line-height: 1.7; }
+.err { color: var(--up); background: rgba(224,57,46,.1); border: 1px solid var(--up);
+       border-radius: 6px; padding: 8px 10px; font-size: 12px; }
+/* ★ .warn = 口径提示（系统已自动降级、结果仍可用），.err = 操作失败。
+   ★★ 必须分开：混用会让「页面出现红色错误块」这个判据失去区分力。 */
+.warn { color: #d8a13a; background: rgba(216,161,58,.1); border: 1px solid #d8a13a;
+        border-radius: 6px; padding: 8px 10px; font-size: 12px; margin-bottom: 10px; }
+/* ★ .ok / .bad 是**状态**语义（服务正常/异常），与 .up/.down 的行情语义无关。
+   涨红跌绿铁律只约束行情；把「正常」染成红色会误导读者。 */
+.ok  { color: #2ea86a; }
+.bad { color: #d8a13a; }
+.hidden { display: none; }
+
+canvas { width: 100%; display: block; }
+
+.legend { display: flex; gap: 14px; font-size: 11px; color: var(--muted); padding-top: 6px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+            margin-right: 4px; vertical-align: -1px; }
+
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+.kv .k { color: var(--muted); }
+
+.sig { font-size: 12px; padding: 6px 0; border-bottom: 1px dashed var(--border); }
+.sig b { font-weight: 600; }
+
+/* Keep identifying fields legible; long explanations can scroll on small windows. */
+#rc-body { overflow-x: auto; }
+#rc-body table { min-width: 1260px; }
+#rc-body th:nth-child(-n+8), #rc-body td:nth-child(-n+8) { white-space: nowrap; }
+#rc-body td:nth-child(9) { min-width: 290px; }
+#rc-body td:nth-child(10) { min-width: 310px; }
+#image-evidence-body { max-height: 520px; overflow-y: auto; line-height: 1.7; }
+#image-evidence summary { cursor: pointer; }

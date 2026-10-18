@@ -1,0 +1,32 @@
+[
+  {
+    "ProcessId": 55280,
+    "ParentProcessId": 4180,
+    "Name": "Opus 辅助交易.exe",
+    "ExecutablePath": "C:\\Users\\cxul\\AppData\\Local\\Programs\\Opus\\Opus 辅助交易.exe"
+  },
+  {
+    "ProcessId": 56916,
+    "ParentProcessId": 55280,
+    "Name": "Opus 辅助交易.exe",
+    "ExecutablePath": "C:\\Users\\cxul\\AppData\\Local\\Programs\\Opus\\Opus 辅助交易.exe"
+  },
+  {
+    "ProcessId": 56088,
+    "ParentProcessId": 55280,
+    "Name": "Opus 辅助交易.exe",
+    "ExecutablePath": "C:\\Users\\cxul\\AppData\\Local\\Programs\\Opus\\Opus 辅助交易.exe"
+  },
+  {
+    "ProcessId": 33416,
+    "ParentProcessId": 55280,
+    "Name": "python.exe",
+    "ExecutablePath": "C:\\Users\\cxul\\AppData\\Local\\Programs\\Opus\\resources\\runtime\\python.exe"
+  },
+  {
+    "ProcessId": 54304,
+    "ParentProcessId": 55280,
+    "Name": "Opus 辅助交易.exe",
+    "ExecutablePath": "C:\\Users\\cxul\\AppData\\Local\\Programs\\Opus\\Opus 辅助交易.exe"
+  }
+]

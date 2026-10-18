@@ -1,0 +1,64 @@
+# Hawk · 字段映射：新浪全市场列表
+# 依据：samples/sina_list.json（2026-10-08 实测，num=100，node=hs_a，单节点覆盖沪深京全A）
+# 维护约定：接口字段变动时只改本文件，不改代码（M1-3铁律）
+# verified_at: 2026-10-08T20:05:09+08:00
+
+source: sina_list
+endpoint: https://vip.stock.finance.sina.com.cn/quotes_service/api/json_v2.php/Market_Center.getHQNodeData
+response_type: json_array
+verified_at: "2026-10-08T20:05:09+08:00"
+sample_file: samples/sina_list.json
+
+# 单位换算：接口返回的是「万元」，落库统一「元」
+unit_scale:
+  mktcap: 10000.0     # 总市值，万元 -> 元
+  nmc: 10000.0        # 流通市值，万元 -> 元
+  amount: 1.0# 成交额，接口已是元
+  volume: 1.0         # 成交量，接口已是股
+
+fields:
+  code:code            # 6 位代码，不带市场前缀
+  symbol: symbol           # 带市场前缀，全局唯一键（sh/sz/bj）
+  name: name
+  market: {derive: market} # 由 symbol 前缀推导：sh->SH, sz->SZ, bj->BJ
+  price: trade                # 最新价
+  pre_close: settlement      # 昨收（结算价）
+  open: open
+  high: high
+  low: low
+  pct_chg: changepercent     # 涨跌幅 %
+  change: pricechange        # 涨跌额
+  volume: volume             # 成交量（股）
+  amount: amount             # 成交额（元）
+  turnover: turnoverratio    # 换手率 %
+  total_mv: {src: mktcap, scale: unit_scale.mktcap}
+  float_mv: {src: nmc, scale: unit_scale.nmc}
+  pe: per
+  pb: pb
+  is_st: {derive: is_st, from: name}  # 名称含 ST/*ST/退 则置 1
+  # 注意：接口不返回「上市日期」与「所属行业」。
+  # 上市日期缺失 -> stock.list_date 为 NULL，依赖下游 min_list_days 过滤时必须显式处理（不得默认通过）
+  list_date: null
+  industry: null
+
+derive_rules:
+  market:
+    sh: SH
+    sz: SZ
+    bj: BJ
+  is_st:
+    # 名称中含以下任一标记即视为风险警示股
+    keywords: ["ST", "*ST", "退", "PT"]
+
+pagination:
+  # 实测 num=100 可用（50/80/100 均成功），单节点 hs_a 覆盖全部 A 股
+  page_size: 100
+  node: hs_a
+  max_pages_estimate: 60      # 约 5400 只 / 100
+  # 每页随机间隔，规避固定频率识别
+  sleep_range: [0.25, 0.55]
+
+notes:
+  - "hs_a 单节点即覆盖沪深主板+创业板+科创板+北交所，无需分节点拉取（实测 bj_a 节点返回空）"
+  - "接口无上市日期/行业字段，需另行补齐（见 M1-4 遗留项）"
+  - "mktcap/nmc 单位为万元，已在 unit_scale 中声明换算"

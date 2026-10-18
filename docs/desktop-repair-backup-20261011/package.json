@@ -1,0 +1,91 @@
+{
+  "name": "opus-trading-desktop",
+  "version": "0.2.1",
+  "description": "Opus 辅助交易 · 桌面端",
+  "main": "main.js",
+  "author": "Opus",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable",
+    "dist:installer": "electron-builder --win nsis",
+    "pack:runtime": "python ../scripts/package_portable.py"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.opus.trading",
+    "productName": "Opus 辅助交易",
+    "copyright": "Opus",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "main.js",
+      "backend.js",
+      "wizard.js",
+      "updater.js",
+      "preload.js",
+      "shell.html",
+      "shell.css",
+      "shell.js",
+      "assets/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "C:/Users/cxul/WorkBuddy/2026-10-08-19-58-20/hawk/backend",
+        "to": "app/backend",
+        "filter": [
+          "**/*.py",
+          "web/**/*"
+        ]
+      },
+      {
+        "from": "C:/Users/cxul/WorkBuddy/2026-10-08-19-58-20/hawk/data",
+        "to": "app/data",
+        "filter": [
+          "*.duckdb",
+          "*.sqlite"
+        ]
+      },
+      {
+        "from": "C:/Users/cxul/WorkBuddy/2026-10-08-19-58-20/hawk/runtime",
+        "to": "runtime",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Opus-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Opus 辅助交易"
+    },
+    "compression": "maximum",
+    "asar": true
+  }
+}

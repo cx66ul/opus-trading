@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "source": "tencent_minute",
+    "url": "https://ifzq.gtimg.cn/appstock/app/kline/mkline",
+    "params": {
+      "param": "sh600519,day,,,100"
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "fetched_at": "2026-10-08T20:05:09+08:00",
+    "status": 200,
+    "elapsed_ms": 355,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 41
+  },
+  "raw": "{\"code\":-1,\"msg\":\"param error\",\"data\":[]}"
+}

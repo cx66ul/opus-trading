@@ -1,0 +1,130 @@
+{
+  "source_hashes": [
+    {
+      "code": "600152",
+      "period": "m1",
+      "raw_bars": 482,
+      "complete_bars": 482,
+      "excluded": [],
+      "sha256": "cefc3cd7c7c960729705872517b052d67194fe88886083e8030866390b69e621",
+      "days": [
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "code": "600152",
+      "period": "m5",
+      "raw_bars": 482,
+      "complete_bars": 480,
+      "excluded": [
+        {
+          "day": "2026-09-17",
+          "observed": 2,
+          "required": 48
+        }
+      ],
+      "sha256": "a0c2988338e4f3e0b38324b273cac387ee14ec7a9bdc1db041b5019399c5018d",
+      "days": [
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "code": "603232",
+      "period": "m1",
+      "raw_bars": 482,
+      "complete_bars": 482,
+      "excluded": [],
+      "sha256": "d4ef305d63943c7a8607593770a3c4b1a5bec7edcd33a4a559e5a5c58ecb1e44",
+      "days": [
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "code": "603232",
+      "period": "m5",
+      "raw_bars": 482,
+      "complete_bars": 480,
+      "excluded": [
+        {
+          "day": "2026-09-17",
+          "observed": 2,
+          "required": 48
+        }
+      ],
+      "sha256": "84018c0512e1c02d1bcb6878a17f120f50e5088e262ab57e125d51da3b05fd1f",
+      "days": [
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "code": "603248",
+      "period": "m1",
+      "raw_bars": 482,
+      "complete_bars": 482,
+      "excluded": [],
+      "sha256": "130aa914f95f9ec0c396c15ddd26021fd43849ed0a8ba082c026b93820ecc13e",
+      "days": [
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    },
+    {
+      "code": "603248",
+      "period": "m5",
+      "raw_bars": 482,
+      "complete_bars": 480,
+      "excluded": [
+        {
+          "day": "2026-09-17",
+          "observed": 2,
+          "required": 48
+        }
+      ],
+      "sha256": "a0391693356e69f330793f70dc802d22afad3425915ceab2b15e2832b418dd53",
+      "days": [
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-08",
+        "2026-10-09"
+      ]
+    }
+  ],
+  "code_hashes": {
+    "config/intraday_image_strategy.json": "18a723a38a89f4522dcf7aa347f691bc228df4fbc170c6cda7b9994a71c4ea71",
+    "backend/domain/intraday_images.py": "0f61835e8a581f0326cf20245f147fb067faae572e488b5f7ab14a8afa3d0b4d",
+    "backend/domain/intraday_t_backtest.py": "06a49f53f0f0ec2f6715f12efb4e27ac8cc4baa1d4b35f655a3caaebbcf76195",
+    "scripts/backtest_intraday_images.py": "1a710b6453fa2202eebe34a350d9eff6ec868dabb554df039b814f455e91537b",
+    "backend/domain/chan.py": "b6418fb6a880648efbb2b9416599f21ce55d3aae1ecb1553c78460e526eafbe4",
+    "docs/intraday-distillation-20261011/蒸馏规则与预注册回测口径.md": "1dd0df71ef28917462d39f715f62bfdb2105f3e1f730078373fbeebfe6b1b87b"
+  },
+  "completed_at": "2026-10-11 23:38:40",
+  "not_true_out_of_sample": true,
+  "market_context": "absent_no_imputation",
+  "result_sha256": "6865869c7d8bbf83dc5e8fc336a1482ac8dab1252333de22789443d2b9af53ca"
+}

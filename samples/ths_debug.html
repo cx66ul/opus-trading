@@ -1,0 +1,67 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>滑动验证码demo</title>
+    <link rel="stylesheet" href="//s.thsi.cn/css/jsmodule/web/captcha/v1.3/captcha.css">
+</head>
+
+<body>
+    <div id="sli-captcha">
+        <div id="slicaptcha" style="width: 380px; margin: 0px auto; position: relative; padding: 15px 21px; background: rgb(255, 255, 255); border: 1px solid rgb(217, 217, 217); box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 14px 0px; border-radius: 6px; display: block; height: auto;"><div id="slicaptcha" class="slicaptcha-box" style="width:380px;" onselectstart="return false"><div id="slicaptcha-title"><span>请完成安全验证</span></div><div style="position:relative;"><img id="slicaptcha-img" style="width:380px; height: 217.94117647058823px;" src="//captcha.10jqka.com.cn/getImg?rand=541713193&amp;time=1791622650.3297&amp;appid=registernew&amp;captcha_type=4&amp;signature=df14151d25ca21fb8b80b53a935f9463&amp;iuk=640fdc06a88e19ca"></div><div id="slicaptcha-icon" class="refreshIcon fa fa-repeat"></div><div id="slicaptcha-close" class="closeIcon fa fa-repeat"></div><img id="slicaptcha-block" class="block" src="//captcha.10jqka.com.cn/getImg?rand=541713193&amp;time=1791622650.3297&amp;appid=registernew&amp;captcha_type=4&amp;signature=df14151d25ca21fb8b80b53a935f9463&amp;iuk=96feeb86fa1304fb" style="left: 0px; top: 150.706px; display: block; height: 61.4706px; width: 61.4706px; opacity: 1;"><div id="slicaptcha-container" class="sliderContainer" style="width:378px;"><div class="sliderMask" id="slicaptcha-mask" style=""><div id="slider" class="slider" style="background-position: -150px -207px;"><img id="sliderIcon" class="fa fa-arrow-right sliderIcon"></div></div><span class="sliderText" id="slicaptcha-text">向右拖动滑块填充拼图</span></div></div><div id="slicaptcha-warn" class="refresh_warn_box" style="display: none;"><div id="slicaptcha-close2" class="closeIcon fa fa-repeat" style="right:5px;top:5px;"></div><p class="refresh_warn_text"><span class="refresh_warn_icon"></span>尝试次数过多</p><div id="slicaptcha-warn-btn" class="refresh_warn_btn">请点击此处重试</div></div></div>
+    </div>
+    <div id="sli-mask"></div>
+
+<script src="//s.thsi.cn/cb?/js/common/b2c/ta/ta.min.js"></script>
+<script src="//s.thsi.cn/js/jsmodule/web/captcha/v1.4/captcha.min.js"></script>
+<script>
+var captcha = window['_captcha'];
+var groupId = getUrlQuery('groupId');
+var returnUrl = getUrlQuery('returnUrl');
+var acHost = getUrlQuery('acHost');
+var sessionId = getUrlQuery('sessionId');
+TA.log({id: 'chameleon_slicaptcha_show'});
+init();
+function init () {
+    captcha.init('slider', {
+        width: 380, // canvas宽度
+        maskDom: 'sli-mask',
+        callback: function(data) {
+        	TA.log({id: 'chameleon_slicaptcha_succ', groupId: 'groupId', returnUrl: 'returnUrl'});
+        	request({
+        		url: acHost + '/AC_Verification/verification_check', 
+        		method: 'POST',
+        		data: {
+    				ticket: data.ticket,
+    				phrase: data.phrase,
+    	    		signature: data.signature,
+    	    		captcha_type: data.captcha_type,
+                    groupId: groupId,
+    	    		sessionId: sessionId,
+    	    		returnUrl: returnUrl
+    	    	},
+    	    	success: function (res) {
+                    if (res.errorcode == 0) {
+                        location.href = returnUrl;
+                    }
+    	    		if (res.errorcode == -100) {
+    	    			alert('验证失败，请重试');
+                    setTimeout(function() {
+                        init();
+                    }, 500);
+                        
+    	    		}
+    	    	}
+    	    })
+            console.log('验证成功')
+        },
+        fail: function() {
+        	TA.log({id: 'chameleon_slicaptcha_fail', groupId: 'groupId', returnUrl: 'returnUrl'});
+            console.log('验证失败')
+        }
+    }, 'slicaptcha');
+}
+
+function getUrlQuery(name, url) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"),
+        r_txt = url ? (url.split('?')[1] === undefined ? '' : url.split('?')[1]) : window.location.search.substr(1),
+        r = r_txt.match(reg);
+   

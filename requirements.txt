@@ -1,0 +1,9 @@
+duckdb>=1.4,<2
+httpx>=0.28,<0.29
+loguru>=0.7,<0.8
+PyYAML>=6,<7
+pytest>=8,<10
+ruff>=0.14,<1
+# 轻量 Web 端（M11 轻量版：FastAPI + 静态页，零构建链）
+fastapi>=0.115,<1
+uvicorn>=0.30,<1

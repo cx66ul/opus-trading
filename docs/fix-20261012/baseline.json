@@ -1,0 +1,91 @@
+{
+  "captured_at": "2026-10-12T02:44:24.139793+08:00",
+  "production": "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk",
+  "repair_workspace": "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012",
+  "files": {
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\config\\image_strategy.json": {
+      "sha256": "da2e5b9f077a5e83a8735e003d03543d90b1914465463e3c7955ffdeedc1195c",
+      "bytes": 464
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\config\\intraday_image_strategy.json": {
+      "sha256": "18a723a38a89f4522dcf7aa347f691bc228df4fbc170c6cda7b9994a71c4ea71",
+      "bytes": 651
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\config\\mail_notifications.json": {
+      "sha256": "304c1e91b526ee4c9d9a60bf5f7a2b103f760cb4a896e782effca0333ea6310b",
+      "bytes": 103
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\data\\hawk.sqlite": {
+      "sha256": "062c0489d9729f5c9c03b95b09ef3ce13c2d1a527f17ced07f641de6771e6b91",
+      "bytes": 35749888
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\data\\opus-intraday.sqlite": {
+      "sha256": "f4dd992ae5b65b404377f48ff25952a5b42a9b25bbc58f091a0f8706e160e1c4",
+      "bytes": 2748416
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\board_member_snapshot.parquet": {
+      "sha256": "bb7d66a164e17203fc255e416e4d84abb85f48a922027b6b129c494bfdb974c3",
+      "bytes": 2729
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\board_strength.parquet": {
+      "sha256": "5c0b71b805b9c51c56b5b474cbeb0170044ce3245b04f870e712524d23ed0645",
+      "bytes": 56562
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\index_daily.parquet": {
+      "sha256": "bf4cbffead8eff6aa62bb4fa4462af774f1c4fc80f43ce82fc1d57f6c8e55f4b",
+      "bytes": 564494
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\index_member_snapshot.parquet": {
+      "sha256": "181af08efd01bb1a721fe20a1c206b4df98730c93011d43f7d82e6304028987b",
+      "bytes": 144
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\kline_daily.parquet": {
+      "sha256": "1d92bfbc1694495e4a851250581cb3da376da9bb1fcc89e14e81bda912df42d5",
+      "bytes": 36160806
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\kline_min.parquet": {
+      "sha256": "20901a981aebb48bc9cb68c22d782aa8269dfb5a8fc5ba07850ace0f40211375",
+      "bytes": 89967494
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\load.sql": {
+      "sha256": "36b7575ec51cf5c0109e6aa3294544f46aa65e80e7085e298d8c1efcd6e1cff9",
+      "bytes": 1381
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\market_regime.parquet": {
+      "sha256": "9067a8c468c27e8e19bcb76b9876c7d0696e361bd39e040dd487d99ea4f65bac",
+      "bytes": 56067
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\quote_snapshot.parquet": {
+      "sha256": "c42f104f3b61d324509a8a69d3f156972f211626595b60e9498a01d642e75e1d",
+      "bytes": 2356
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\schema.sql": {
+      "sha256": "4b386e8c03c864158f3e58d5607cf1e15d0a66b168e3431fbad7969f5f7a7b98",
+      "bytes": 2205
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk-fix-20261012\\baseline-duck-export\\sync_watermark.parquet": {
+      "sha256": "f3897ad7e02da4e61eedaa1e3bb0fe643e35840a63a900faae62250b44935087",
+      "bytes": 883
+    }
+  },
+  "api": {
+    "/api/ready": {
+      "unavailable": "[WinError 10061] 由于目标计算机积极拒绝，无法连接。"
+    },
+    "/api/mail/status": {
+      "unavailable": "[WinError 10061] 由于目标计算机积极拒绝，无法连接。"
+    }
+  },
+  "outbox": [
+    {
+      "event_key": "mail-recovery:2026-10-11",
+      "kind": "recovery_check",
+      "state": "sent",
+      "created_at": "2026-10-11T20:33:32.393662+08:00",
+      "attempted_at": "2026-10-11T20:33:38.529186+08:00",
+      "sent_at": "2026-10-11T20:33:38.529186+08:00",
+      "attempts": 1
+    }
+  ],
+  "method": "SQLite backup API from read-only connections; DuckDB read-only EXPORT/isolated IMPORT; no production lifecycle change or SMTP"
+}

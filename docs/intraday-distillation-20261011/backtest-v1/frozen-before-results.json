@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-11 23:38:23",
+  "files": {
+    "config/intraday_image_strategy.json": "18a723a38a89f4522dcf7aa347f691bc228df4fbc170c6cda7b9994a71c4ea71",
+    "backend/domain/intraday_images.py": "0f61835e8a581f0326cf20245f147fb067faae572e488b5f7ab14a8afa3d0b4d",
+    "backend/domain/intraday_t_backtest.py": "06a49f53f0f0ec2f6715f12efb4e27ac8cc4baa1d4b35f655a3caaebbcf76195",
+    "scripts/backtest_intraday_images.py": "1a710b6453fa2202eebe34a350d9eff6ec868dabb554df039b814f455e91537b",
+    "backend/domain/chan.py": "b6418fb6a880648efbb2b9416599f21ce55d3aae1ecb1553c78460e526eafbe4",
+    "docs/intraday-distillation-20261011/蒸馏规则与预注册回测口径.md": "1dd0df71ef28917462d39f715f62bfdb2105f3e1f730078373fbeebfe6b1b87b"
+  },
+  "policy": {
+    "version": "intraday-images-20261011-v1",
+    "enabled": true,
+    "available_from": "2026-10-11T23:00:00+08:00",
+    "validation_status": "unvalidated_no_performance_claim",
+    "parameters_are": "frozen_engineering_interpretations_not_original_numeric_claims",
+    "shrink_ratio": 0.8,
+    "expand_ratio": 1.5,
+    "red_green_ratio": 1.2,
+    "trend_ma": 5,
+    "max_t_fraction": 0.3333333333333333,
+    "market_max_age_seconds": 180,
+    "limit_down_max": 10,
+    "late_exit_start": "14:30",
+    "ma_cross_enabled": false,
+    "board_chase_enabled": false,
+    "missing_market_action": "candidate_only",
+    "source_images": [
+      "source-1.jpg",
+      "source-2.jpg",
+      "source-3.jpg"
+    ],
+    "hash": "18a723a38a89f4522dcf7aa347f691bc228df4fbc170c6cda7b9994a71c4ea71"
+  },
+  "universe": [
+    "600152",
+    "603232",
+    "603248"
+  ],
+  "slippages": [
+    0.002,
+    0.001,
+    0.0005
+  ],
+  "no_parameter_search": true
+}

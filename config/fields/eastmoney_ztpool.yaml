@@ -1,0 +1,74 @@
+# Hawk · 字段映射：东财涨停池
+# 依据：samples/eastmoney_ztpool.json（2026-10-08 实测，date=20261008，pagesize=10）
+# verified_at: 2026-10-08T20:05:09+08:00
+#
+# ★ 这是全部数据源里最容易「静默出错」的一类：字段全是单字母缩写，无自解释性。
+#   下方每个字段的含义均由实测值交叉校验得出（见 notes），改动需重新验证。
+
+source: eastmoney_ztpool
+endpoint: https://push2ex.eastmoney.com/getTopicZTPool
+params:
+  ut: "7eea3edcaed734bea9cbfc24409ed989"
+  dpt: "wz.ztzt"
+  Pageindex: 0
+  pagesize: 100
+  sort: "fbt:asc"      # 按首次封板时间升序
+  date: "<YYYYMMDD>"
+response_type: json_nested
+verified_at: "2026-10-08T20:05:09+08:00"
+sample_file: samples/eastmoney_ztpool.json
+reachability_note: "push2ex 主机本机实测可达；但 push2/push2his 不可达（详见 config/sources.yaml）"
+
+envelope:
+  rc: 0# 返回码，0 = 正常
+  data.tc: total_count    # 涨停总家数 -> 用于「涨停 > 80 家」等阈值判定
+  data.qdate: "2026-10-08"  # 数据日期，必须与请求 date 一致，否则丢弃（防拿到陈旧缓存）
+  data.pool: []              # 涨停明细数组
+
+fields:
+  c:  code          # 6 位代码           实测 '002058'
+  n:  name          # 名称               实测 '紫竹高科'
+  p:  price          # 最新价（×1000）    实测 22220 -> 22.220 元；紫竹高科当日涨停价 22.22，自洽
+  zdp: pct_chg      # 涨跌幅 %           实测 10.0（涨停）
+  amount: amount     # 成交额（元）       实测 104419028（1.04 亿），与 p×成交量量级相符
+  ltsz: float_mv     # 流通市值（元）     实测 3185588787（31.9 亿）
+  tshare: total_mv    # 总市值（元）       实测 3187421937
+  hs: turnover       # 换手率 %           实测 3.295
+  lbc: streak        # 连板数             实测 3 -> 对应 zttj.days=3
+  fbt: first_seal_time  # 首次封板时间（HHMMSS）实测 92500 -> 09:25:00（集合竞价封板）
+  lbt: last_seal_time   # 最后封板时间（HHMMSS）实测 93042
+  fund: seal_amount  # 封单金额（元）     实测 142263550（1.42 亿）
+  zbc: open_times    # 开板次数           实测 1（炸板 1 次）
+  hybk: industry     # 所属行业板块       实测 '电池'
+  m:  market         # 市场标识 0=深1=沪实测 0（002058 深市）
+  zttj.days: streak_days  # 统计周期天数    实测 3
+  zttj.ct:  streak_count  # 区间涨停次数    实测 3（3 天 3 板）
+
+# 派生规则
+derive:
+  code_with_market: {value: "${market_prefix}${c}", rule: "m==0 -> 'sz', m==1 -> 'sh'"}
+  is_one_word_board: {rule: "lbc==1", note: "首板；用于「首板溢价」情绪指标"}
+  seal_time_str: {rule: "fbt/lbt 为 HHMMSS 整数，需补零转 'HH:MM:SS'"}
+
+# 炸板率计算所需（对应 4.7 大盘环境模块）
+broken_board:
+  # 炸板股池端点（与涨停池同主机，本机实测可达）
+  endpoint: https://push2ex.eastmoney.com/getTopicZBPool
+  note: "跌停池同理getTopicDTPool。炸板率 = 炸板数 / (涨停数 + 炸板数)"
+
+pagination:
+  page_size: 100
+  max_pages_estimate: 6
+  sleep_range: [0.8, 1.5]      # 该源限流严格（建议 QPS 2），间隔放大
+
+unit_notes:
+  p: "接口返回放大 1000 倍的价格，实测 22220 = 22.220 元。★ 必须除以 1000，漏除会导致价格放大千倍"
+  fbt: "格式 HHMMSS 无分隔符，92500 = 09:25:00"
+  lbt: "同上"
+
+notes:
+  - "p 字段是放大值，这是本接口最高频的踩坑点，已在 unit_notes 显式标注"
+  - "zbc（开板次数）> 0 说明盘中炸过板，是判断封板质量的关键；结合 fbt 越早封板越强"
+  - "lbc 连板数是情绪周期模块「最高连板高度」的数据来源"
+  - "hybk 行业字段可直接用于板块归类，但仅覆盖东财行业，需与板块成分表交叉核对"
+  - "qdate 与请求 date 不一致时必须丢弃该响应（免费源会返回最近缓存）"

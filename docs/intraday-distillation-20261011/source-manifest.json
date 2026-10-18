@@ -1,0 +1,20 @@
+[
+  {
+    "image": 1,
+    "source": "C:\\Users\\cxul\\AppData\\Local\\Temp\\codex-clipboard-c74c8700-77fc-48a2-846c-5dd03557be2c.jpg",
+    "file": "source-1.jpg",
+    "sha256": "89b2251ae6dd2e1240bc0fc5173db6bfa1b8134b79cbaadb4bbff64f6db55850"
+  },
+  {
+    "image": 2,
+    "source": "C:\\Users\\cxul\\AppData\\Local\\Temp\\codex-clipboard-306d26f2-0119-4c35-b0f1-af8613f62cfb.jpg",
+    "file": "source-2.jpg",
+    "sha256": "f22f7ecb505434fd547e2e6ad9f7f4a40e7c53061132ce47f2d52b8431b3c027"
+  },
+  {
+    "image": 3,
+    "source": "C:\\Users\\cxul\\AppData\\Local\\Temp\\codex-clipboard-71f4c007-0870-43e1-a7b3-614f2288d63b.jpg",
+    "file": "source-3.jpg",
+    "sha256": "eeb22f85259bd1c97652a130182a730634fea5c5dbf5c6775473a2122ec239c9"
+  }
+]

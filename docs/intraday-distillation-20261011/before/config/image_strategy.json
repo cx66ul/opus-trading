@@ -1,0 +1,17 @@
+{
+  "revision": "images-20261011-v1",
+  "enabled": true,
+  "available_from": "2026-10-11",
+  "source_weight": 0.6,
+  "validation_status": "unvalidated_user_priority",
+  "parameters_are": "engineering_interpretations_not_author_quotes",
+  "ma5_distance": 0.03,
+  "shrink_ratio": 0.8,
+  "breakout_volume_ratio": 1.5,
+  "base_range": 0.18,
+  "ma_spread": 0.04,
+  "chase_distance": 0.08,
+  "high_gain20": 0.25,
+  "heavy_down_return": -0.04,
+  "weak_market_cap": 0.3
+}

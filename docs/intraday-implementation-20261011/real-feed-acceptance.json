@@ -1,0 +1,126 @@
+{
+  "at": "2026-10-11 21:58:13",
+  "seconds": 7.08,
+  "results": [
+    {
+      "code": "600152",
+      "period": "m1",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 12,
+      "active": 3,
+      "candidates": 6,
+      "replay": 12
+    },
+    {
+      "code": "600152",
+      "period": "m5",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 13,
+      "active": 5,
+      "candidates": 7,
+      "replay": 13
+    },
+    {
+      "code": "600152",
+      "period": "m30",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 21,
+      "active": 4,
+      "candidates": 14,
+      "replay": 21
+    },
+    {
+      "code": "600152",
+      "period": "m60",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 24,
+      "active": 11,
+      "candidates": 9,
+      "replay": 24
+    },
+    {
+      "code": "603232",
+      "period": "m1",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 15,
+      "active": 6,
+      "candidates": 5,
+      "replay": 15
+    },
+    {
+      "code": "603232",
+      "period": "m5",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 14,
+      "active": 5,
+      "candidates": 9,
+      "replay": 14
+    },
+    {
+      "code": "603232",
+      "period": "m30",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 24,
+      "active": 6,
+      "candidates": 12,
+      "replay": 24
+    },
+    {
+      "code": "603232",
+      "period": "m60",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 26,
+      "active": 10,
+      "candidates": 11,
+      "replay": 26
+    },
+    {
+      "code": "603248",
+      "period": "m1",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 12,
+      "active": 4,
+      "candidates": 4,
+      "replay": 12
+    },
+    {
+      "code": "603248",
+      "period": "m5",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 17,
+      "active": 9,
+      "candidates": 3,
+      "replay": 17
+    },
+    {
+      "code": "603248",
+      "period": "m30",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 29,
+      "active": 8,
+      "candidates": 10,
+      "replay": 29
+    },
+    {
+      "code": "603248",
+      "period": "m60",
+      "bars": 482,
+      "latest": "2026-10-09 15:00:00",
+      "signals": 30,
+      "active": 10,
+      "candidates": 8,
+      "replay": 30
+    }
+  ]
+}

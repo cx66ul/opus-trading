@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "code": "600152",
+      "trade_date": "2026-10-09",
+      "records": 62,
+      "oldVisible": 46,
+      "compact": 2,
+      "detailed": 39,
+      "all": 55,
+      "detailRows": 62
+    },
+    {
+      "code": "603232",
+      "trade_date": "2026-10-09",
+      "records": 38,
+      "oldVisible": 25,
+      "compact": 1,
+      "detailed": 35,
+      "all": 35,
+      "detailRows": 38
+    },
+    {
+      "code": "603248",
+      "trade_date": "2026-10-09",
+      "records": 57,
+      "oldVisible": 47,
+      "compact": 2,
+      "detailed": 54,
+      "all": 54,
+      "detailRows": 57
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Opus 辅助交易</title>
+<!--
+  ★ 桌面端「壳层」界面
+  --------------------------------------------------
+  这不是主界面 —— 主界面是 Python 服务提供的那套页面。
+  这里只负责**主界面之外**的四件事：
+    1. 启动中（后端还没起来时的等待画面）
+    2. 启动失败（给出**可执行**的下一步，而不是一个红条）
+    3. 首次运行向导（三态检查 + 修复命令）
+    4. 检查更新
+  ★ 为什么不用 React/Vue：主界面已是无构建链的原生 JS，
+    壳层再引框架会引入构建链，两者风格不一致且徒增体积。
+-->
+<link rel="stylesheet" href="shell.css">
+</head>
+<body>
+
+<!-- ══════════════════════ 启动中 ══════════════════════ -->
+<section id="scr-boot" class="screen on">
+  <div class="brand">
+    <img src="assets/icon.png" alt="" class="logo" id="boot-logo">
+    <h1>Opus 辅助交易</h1>
+    <p class="sub">决策副驾 · 不接券商下单接口</p>
+  </div>
+  <div class="boot-status">
+    <div class="spinner"></div>
+    <p id="boot-msg">正在启动本地服务…</p>
+    <p class="dim">服务就绪后自动进入；启动失败时可直接重试</p>
+  </div>
+</section>
+
+<!-- ══════════════════════ 启动失败 ══════════════════════ -->
+<section id="scr-error" class="screen">
+  <div class="box err">
+    <h2>本地服务未能启动</h2>
+    <p class="why" id="err-msg"></p>
+
+    <!-- ★ 失败时最缺的是「我现在该干什么」，不是「发生了什么」 -->
+    <div class="acts">
+      <button id="btn-retry" class="primary">重试</button>
+      <button id="btn-copy">复制诊断信息</button>
+      <button id="btn-wizard">运行首次检查</button>
+    </div>
+
+    <details class="detail">
+      <summary>技术细节</summary>
+      <pre id="err-detail"></pre>
+    </details>
+  </div>
+</section>
+
+<!-- ══════════════════════ 首次运行向导 ══════════════════════ -->
+<section id="scr-wizard" class="screen">
+  <div class="box wide">
+    <h2>首次运行检查</h2>
+    <p class="dim">已通过的项不会在下次启动时重复询问。</p>
+    <table id="wiz-table">
+      <thead><tr><th class="l">检查项</th><th class="w">状态</th><th class="l">说明</th><th class="l">怎么办</th></tr></thead>
+      <tbody id="wiz-body"></tbody>
+    </table>
+    <div class="acts">
+      <button id="btn-wiz-recheck" class="primary">重新检查</button>
+      <button id="btn-wiz-continue">进入应用</button>
+    </div>
+  </div>
+</section>
+
+<script src="shell.js"></script>
+</body>
+</html>

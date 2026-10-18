@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-12T01:04:18.201797+08:00",
+  "checks": {
+    "baseline_chan": true,
+    "fused_full": true,
+    "price_only_ablation": true,
+    "archive_preserved": true,
+    "balanced_fences": true,
+    "no_replacement_char": true,
+    "all_51_project_references_exist": true
+  },
+  "reference_count": 51,
+  "files": {
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\Opus辅助交易系统_完整交接文档_2026-10-12.md": {
+      "bytes": 40252,
+      "sha256": "d6944d30a15a098864985d913863e7c35bc8ab008d93af3443439b33bc0b889a"
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\交接文档.md": {
+      "bytes": 40252,
+      "sha256": "d6944d30a15a098864985d913863e7c35bc8ab008d93af3443439b33bc0b889a"
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\docs\\handoff-20261012\\交接文档_更新前存档.md": {
+      "bytes": 30960,
+      "sha256": "e5eab57783b9e78cda0fdf95e2557489595b8cd2bddf7e2cf8969e7e76181078"
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\docs\\handoff-20261012\\current-status.json": {
+      "bytes": 18057,
+      "sha256": "ae7441cda303e1b2b21f6d50e2cdb9bc6bcedec8301f4fd8e3815eff98ea75ad"
+    },
+    "C:\\Users\\cxul\\WorkBuddy\\2026-10-08-19-58-20\\hawk\\docs\\handoff-20261012\\processes.json": {
+      "bytes": 1007,
+      "sha256": "ccd4f35f6f3e168236c094e4b627d949f3da26e5378a58b9c68af3585b906d94"
+    }
+  },
+  "scope": "Documentation and read-only runtime snapshot only; no new business tests, SMTP sends, or strategy changes in this handoff turn."
+}

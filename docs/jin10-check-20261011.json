@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-11T14:27:19.263508+08:00",
+  "database": {
+    "raw_news": [
+      {
+        "source": "sina_7x24",
+        "count": 8340,
+        "latest_saved": "2026-10-11T03:16:14+08:00",
+        "latest_news": "2026-10-11 03:08:34"
+      }
+    ],
+    "raw_news_jin10_count": 0,
+    "news": [
+      {
+        "source": "sina_7x24",
+        "count": 130,
+        "latest_saved": "2026-10-10T23:18:56+08:00",
+        "latest_news": "2026-10-10 23:11:59"
+      }
+    ],
+    "news_jin10_count": 0
+  },
+  "fetch": {
+    "ok": false,
+    "error_type": "NotImplementedError",
+    "message": "金十源需 Playwright 环境。请先运行：\n  python scripts/scrape_jin10.py --probe\n探测真实 XHR 端点并落样本到 samples/jin10_xhr.json，再据实实现本类。\n在此之前，请使用 sina_7x24（结构化 JSON，已验证可用）。"
+  },
+  "http": [
+    {
+      "url": "https://www.jin10.com/",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 5011
+    },
+    {
+      "url": "https://flash-api.jin10.com/get_flash_list",
+      "status": 502,
+      "content_type": null,
+      "bytes": 0
+    }
+  ],
+  "conclusion": "not_operational"
+}
